@@ -1,3 +1,4 @@
+
 """
 Osiris — Advanced Repository Ingestion & Novelty Evaluation Engine (v2.0)
 ===========================================================================
@@ -49,6 +50,10 @@ except ImportError:
 try:
     from qdrant_client import QdrantClient
     from qdrant_client.models import Distance, PointStruct, VectorParams
+    try:
+        from qdrant_client.models import NamedVector
+    except ImportError:
+        NamedVector = None
     _QDRANT_OK = True
 except ImportError:
     _QDRANT_OK = False
@@ -69,6 +74,7 @@ TOP_K_COMPARISONS               = 5
 EMBEDDING_MODEL                 = "all-MiniLM-L6-v2"
 EMBEDDING_DIM                   = 384
 COLLECTION_NAME                 = "osiris_research_corpus"
+QDRANT_VECTOR_NAME              = "repo_embedding"
 MAX_DOC_SCORE                   = 100
 
 # Anomaly & Integrity Detection Thresholds
@@ -374,6 +380,8 @@ _qdrant_instance: Optional[object] = None
 def _resolve_qdrant_client(url=None, api_key=None):
     global _qdrant_instance
     if _qdrant_instance is None and _QDRANT_OK:
+        url = url or os.getenv("QDRANT_URL")
+        api_key = api_key or os.getenv("QDRANT_API_KEY")
         if url:
             _qdrant_instance = QdrantClient(url=url, api_key=api_key)
         else:
@@ -386,22 +394,135 @@ def _verify_qdrant_collection(client, target_dim: int):
         if COLLECTION_NAME not in collections:
             client.create_collection(
                 COLLECTION_NAME,
-                vectors_config=VectorParams(size=target_dim, distance=Distance.COSINE),
+                vectors_config={QDRANT_VECTOR_NAME: VectorParams(size=target_dim, distance=Distance.COSINE)},
             )
-    except Exception:
-        pass
+            print(f"[QDRANT] Created collection={COLLECTION_NAME} vector_name={QDRANT_VECTOR_NAME} vector_dim={target_dim} distance=COSINE")
+            return
+
+        diagnostics = _qdrant_collection_diagnostics(client)
+        configured_dim = diagnostics.get("vector_size")
+        if configured_dim and configured_dim != target_dim:
+            print(
+                f"[QDRANT WARNING] Collection vector dimension mismatch: "
+                f"collection_dim={configured_dim} query_dim={target_dim}. "
+                f"Neighbor retrieval may return zero results until the collection is rebuilt."
+            )
+    except Exception as e:
+        print(f"[QDRANT WARNING] Collection verification failed: {e}")
 
 def _index_qdrant_point(client, repo_id: str, vector: np.ndarray, metadata: dict):
     try:
         point_uuid = str(uuid.uuid5(uuid.NAMESPACE_URL, repo_id))
+        vector_payload = _qdrant_point_vector(client, vector)
         client.upsert(
             collection_name=COLLECTION_NAME,
             points=[
-                PointStruct(id=point_uuid, vector=vector.tolist(), payload={"repo_id": repo_id, **metadata})
-            ]
+                PointStruct(id=point_uuid, vector=vector_payload, payload={"repo_id": repo_id, **metadata})
+            ],
+            wait=True,
         )
+        collection_size = _qdrant_count_points(client)
+        print(f"[QDRANT] Inserted point_id={point_uuid} repo_id={repo_id} collection_size={collection_size}")
     except Exception as e:
         print(f"\n[CRITICAL DB ERROR] Qdrant Insert Failed for {repo_id}: {e}")
+
+def _qdrant_collection_diagnostics(client) -> dict:
+    """Returns best-effort collection details across qdrant-client versions."""
+    try:
+        info = client.get_collection(COLLECTION_NAME)
+        params = getattr(getattr(info, "config", None), "params", None)
+        vectors = getattr(params, "vectors", None)
+        vector_size = getattr(vectors, "size", None)
+        distance = getattr(vectors, "distance", None)
+        vector_names = []
+        if isinstance(vectors, dict):
+            vector_names = list(vectors.keys())
+            selected = vectors.get(QDRANT_VECTOR_NAME) or next(iter(vectors.values()), None)
+            vector_size = getattr(selected, "size", None)
+            distance = getattr(selected, "distance", None)
+        return {
+            "vector_size": vector_size,
+            "vector_names": vector_names,
+            "vector_mode": "named" if vector_names else "unnamed",
+            "distance": str(distance) if distance is not None else None,
+            "points_count": getattr(info, "points_count", None),
+            "indexed_vectors_count": getattr(info, "indexed_vectors_count", None),
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+def _qdrant_count_points(client) -> int:
+    try:
+        return int(client.count(COLLECTION_NAME, exact=True).count)
+    except TypeError:
+        return int(client.count(COLLECTION_NAME).count)
+    except Exception:
+        return 0
+
+def _qdrant_uses_named_vectors(client) -> bool:
+    diagnostics = _qdrant_collection_diagnostics(client)
+    return diagnostics.get("vector_mode") == "named"
+
+def _qdrant_point_vector(client, vector: np.ndarray):
+    if _qdrant_uses_named_vectors(client):
+        return {QDRANT_VECTOR_NAME: vector.tolist()}
+    return vector.tolist()
+
+def _qdrant_query_vector(client, vector: np.ndarray):
+    if _qdrant_uses_named_vectors(client):
+        if NamedVector is not None:
+            return NamedVector(name=QDRANT_VECTOR_NAME, vector=vector.tolist())
+        return {"name": QDRANT_VECTOR_NAME, "vector": vector.tolist()}
+    return vector.tolist()
+
+def _query_qdrant_neighbors(client, query_vector: np.ndarray, *, limit: int = 20) -> list[dict]:
+    """Queries Qdrant with compatibility fallbacks and payload diagnostics."""
+    hits = []
+    try:
+        search_result = client.query_points(
+            collection_name=COLLECTION_NAME,
+            query=_qdrant_query_vector(client, query_vector),
+            limit=limit,
+            with_payload=True,
+        )
+        points = getattr(search_result, "points", search_result)
+    except Exception as query_error:
+        print(f"[QDRANT WARNING] query_points failed, trying legacy search API: {query_error}")
+        try:
+            points = client.search(
+                collection_name=COLLECTION_NAME,
+                query_vector=_qdrant_query_vector(client, query_vector),
+                limit=limit,
+                with_payload=True,
+            )
+        except Exception as search_error:
+            print(f"[QDRANT WARNING] Legacy search API also failed: {search_error}")
+            return []
+
+    for hit in points or []:
+        payload = getattr(hit, "payload", None) or {}
+        hits.append({
+            "repo_id": payload.get("repo_id", ""),
+            "sim": float(getattr(hit, "score", 0.0)),
+            "category": payload.get("category", "General / Other"),
+            "activity": payload.get("activity", 0.5),
+            "tags": payload.get("tags", []),
+        })
+    return hits
+
+def _query_internal_neighbors(query_vector: np.ndarray, *, limit: int = 20) -> list[dict]:
+    """Fallback ANN scan over in-process corpus history."""
+    internal_hits = []
+    for node in _internal_corpus_history:
+        internal_hits.append({
+            "repo_id": node["repo_id"],
+            "sim": _cosine(query_vector, node["vector"]),
+            "category": node.get("category", "General / Other"),
+            "activity": node.get("activity", 0.5),
+            "tags": node.get("tags", []),
+        })
+    internal_hits.sort(key=lambda hit: hit["sim"], reverse=True)
+    return internal_hits[:limit]
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -746,38 +867,30 @@ def ingest_repository(
     # ── QDRANT ANN SEARCH: Retrieve Top 20 Neighbors ──
     qdrant_hits = []
     corpus_total = len(_internal_corpus_history)
+    q_client = None
     
     if _QDRANT_OK:
         try:
             q_client = _resolve_qdrant_client(qdrant_url, qdrant_api_key)
             _verify_qdrant_collection(q_client, composite_hybrid_vector.shape[0])
             
-            corpus_total = q_client.count(COLLECTION_NAME).count
+            corpus_total = _qdrant_count_points(q_client)
             
             if corpus_total > 0:
-                # Search Qdrant using the correct query_points API for your version
-                search_result = q_client.query_points(
-                    collection_name=COLLECTION_NAME,
-                    query=composite_hybrid_vector.tolist(),
-                    limit=20,
-                    with_payload=True
-                ).points
-                
-                # Map payload outputs
-                for hit in search_result:
-                    qdrant_hits.append({
-                        "repo_id": hit.payload.get("repo_id", ""),
-                        "sim": hit.score,
-                        "category": hit.payload.get("category", "General / Other"),
-                        "activity": hit.payload.get("activity", 0.5),
-                        "tags": hit.payload.get("tags", [])
-                    })
+                qdrant_hits = _query_qdrant_neighbors(q_client, composite_hybrid_vector, limit=20)
         except Exception as e:
             print(f"\n[CRITICAL DB ERROR] Qdrant Search Failed: {e}")
+
+    if not qdrant_hits and _internal_corpus_history:
+        qdrant_hits = _query_internal_neighbors(composite_hybrid_vector, limit=20)
+        corpus_total = max(corpus_total, len(_internal_corpus_history))
+        print("[QDRANT WARNING] Falling back to in-memory corpus neighbor scan.")
 
     # ── INJECTED TELEMETRY DIAGNOSTICS ──
     print(f"\n[DEBUG] Target Repo ID: {repo_id}")
     print(f"[DEBUG] Qdrant corpus_total: {corpus_total}")
+    if _QDRANT_OK and q_client is not None:
+        print(f"[DEBUG] Qdrant diagnostics: {_qdrant_collection_diagnostics(q_client)}")
     print(f"[DEBUG] Neighbors retrieved: {len(qdrant_hits)}")
     
     neighbor_ids = [hit["repo_id"] for hit in qdrant_hits]
@@ -833,7 +946,7 @@ def ingest_repository(
                 "novelty_index_point": novelty_eval_matrix.final
             })
             
-            if _QDRANT_OK:
+            if _QDRANT_OK and q_client is not None:
                 try:
                     _index_qdrant_point(q_client, repo_id, composite_hybrid_vector, {
                         "category": taxonomy_category, "activity": ecosystem_activity, "tags": extracted_tags,

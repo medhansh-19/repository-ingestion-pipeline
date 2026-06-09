@@ -1,0 +1,166 @@
+from __future__ import annotations
+
+import base64
+from datetime import datetime, timedelta, timezone
+from typing import Any
+
+import ingestion_engine
+from github_discovery import DiscoveryConfig, GitHubDiscoveryEngine
+from readme_processor import process_markdown, process_readme_payload
+from repository_enricher import RepositoryEnricher
+
+
+class FakeGitHubClient:
+    def __init__(self) -> None:
+        self.search_calls: list[tuple[str, str]] = []
+
+    def search_repositories(self, query: str, *, sort: str, order: str, per_page: int, max_pages: int) -> list[dict[str, Any]]:
+        self.search_calls.append((query, sort))
+        band = "recent" if "pushed:" in query else "emerging" if "created:" in query else "mid" if "50..500" in query else "high"
+        return [
+            {"full_name": f"owner/{band}-{len(self.search_calls)}-{idx}", "stargazers_count": 100 + idx}
+            for idx in range(2)
+        ]
+
+
+def test_readme_processor_decodes_and_extracts_meaningful_paragraphs() -> None:
+    markdown = """
+# Project
+![badge](https://img.shields.io/badge/build-passing.svg)
+
+This repository provides a robust automation framework for running developer workflows across cloud systems and local machines.
+
+```python
+print("not semantic docs")
+```
+
+![screenshot](docs/screenshot.png)
+
+## Install
+pip install example
+
+The architecture includes a scheduler, plugin runtime, event router, and integration adapters for production operations.
+"""
+    payload = {"encoding": "base64", "content": base64.b64encode(markdown.encode()).decode()}
+
+    document = process_readme_payload(payload)
+
+    assert document.readme_length == len(markdown)
+    assert len(document.extracted_paragraphs) == 2
+    assert "badge" not in document.clean_text.lower()
+    assert "screenshot" not in document.clean_text.lower()
+
+
+def test_repository_enricher_generates_osiris_payload() -> None:
+    now = datetime.now(timezone.utc)
+    client = EnricherFakeClient(now)
+    result = RepositoryEnricher(client).enrich({"full_name": "owner/repo", "_discovery_category": "AI", "_discovery_band": "mid_sized"})
+
+    assert result is not None
+    payload = result.payload
+    assert payload["id"] == "owner/repo"
+    assert payload["star_count"] == 144
+    assert payload["primary_language"] == "Python"
+    assert payload["mentionable_users_count"] == 3
+    assert payload["readme_length"] > 0
+    assert payload["readme_to_codebase_ratio"] > 0
+    assert payload["delta_3d"] == 1
+    assert payload["delta_7d"] == 2
+    assert payload["delta_30d"] == 3
+    assert payload["extracted_paragraphs"]
+    assert payload["discovery_category"] == "AI"
+
+
+def test_discovery_balances_bands_and_deduplicates() -> None:
+    client = FakeGitHubClient()
+    engine = GitHubDiscoveryEngine(client, config=DiscoveryConfig(total_limit=12, per_query=4, pages_per_query=1, random_seed=1))
+
+    repos = engine.discover(limit=12)
+
+    assert len(repos) == 12
+    assert len({repo["full_name"] for repo in repos}) == len(repos)
+    bands = {repo["_discovery_band"] for repo in repos}
+    assert {"high_star", "recently_active", "mid_sized", "emerging"}.intersection(bands)
+
+
+def test_ingestion_engine_uses_internal_neighbors_when_qdrant_unavailable() -> None:
+    original_qdrant_ok = ingestion_engine._QDRANT_OK
+    original_history = list(ingestion_engine._internal_corpus_history)
+    original_timeline = list(ingestion_engine._growth_timeline_stream)
+    ingestion_engine._QDRANT_OK = False
+    ingestion_engine._internal_corpus_history.clear()
+    ingestion_engine._growth_timeline_stream.clear()
+    try:
+        first = ingestion_engine.ingest_repository(_osiris_repo("owner/seed"), auto_index=True)
+        second = ingestion_engine.ingest_repository(_osiris_repo("owner/similar"), auto_index=True)
+    finally:
+        ingestion_engine._QDRANT_OK = original_qdrant_ok
+        ingestion_engine._internal_corpus_history[:] = original_history
+        ingestion_engine._growth_timeline_stream[:] = original_timeline
+
+    assert first.novelty.final == 1.0
+    assert second.novelty.top_k
+    assert second.novelty.final < 1.0
+
+
+class EnricherFakeClient:
+    def __init__(self, now: datetime) -> None:
+        self.now = now
+
+    def get_repository(self, full_name: str) -> dict[str, Any]:
+        return {
+            "full_name": full_name,
+            "stargazers_count": 144,
+            "language": "Python",
+            "size": 100,
+            "forks_count": 12,
+            "open_issues_count": 4,
+            "description": "A useful AI repository",
+            "html_url": "https://github.com/owner/repo",
+            "created_at": (self.now - timedelta(days=60)).isoformat(),
+            "updated_at": (self.now - timedelta(days=1)).isoformat(),
+            "pushed_at": (self.now - timedelta(days=2)).isoformat(),
+            "topics": ["ai", "rag"],
+            "owner": {"login": "owner"},
+        }
+
+    def get_readme(self, full_name: str) -> dict[str, Any]:
+        markdown = "This repository implements retrieval augmented generation workflows with ingestion, indexing, and evaluation components for production systems."
+        return {"encoding": "base64", "content": base64.b64encode(markdown.encode()).decode()}
+
+    def get_topics(self, full_name: str) -> list[str]:
+        return ["ai", "rag"]
+
+    def get_languages(self, full_name: str) -> dict[str, int]:
+        return {"Python": 1000, "Shell": 100}
+
+    def get_contributors(self, full_name: str, *, max_pages: int = 1) -> list[dict[str, Any]]:
+        return [{"login": "a"}, {"login": "b"}, {"login": "c"}]
+
+    def get_events(self, full_name: str) -> list[dict[str, Any]]:
+        return []
+
+    def get_stargazers(self, full_name: str, *, max_pages: int = 4) -> list[dict[str, Any]]:
+        return [
+            {"starred_at": (self.now - timedelta(days=1)).isoformat()},
+            {"starred_at": (self.now - timedelta(days=5)).isoformat()},
+            {"starred_at": (self.now - timedelta(days=20)).isoformat()},
+        ]
+
+
+def _osiris_repo(repo_id: str) -> dict[str, Any]:
+    return {
+        "id": repo_id,
+        "star_count": 100,
+        "pushed_days_ago": 1,
+        "mentionable_users_count": 5,
+        "primary_language": "Python",
+        "readme_length": 2000,
+        "readme_to_codebase_ratio": 0.05,
+        "extracted_paragraphs": [
+            "This Python AI agent framework provides retrieval augmented generation workflows, tool calling, and production automation for developer systems."
+        ],
+        "delta_3d": 3,
+        "delta_7d": 7,
+        "delta_30d": 20,
+    }
