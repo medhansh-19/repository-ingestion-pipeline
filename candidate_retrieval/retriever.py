@@ -93,9 +93,12 @@ class CandidateRetriever:
         call: Callable[[], Awaitable[list[CandidateRepo]]],
     ) -> list[CandidateRepo]:
         started = time.perf_counter()
+        print(f"[DEBUG RETRIEVER] Starting channel: {source}")
         try:
             candidates = await call()
+            print(f"[DEBUG RETRIEVER] Finished channel: {source} (returned {len(candidates)})")
         except Exception as exc:  # pragma: no cover - exact logging branch covered by fallback tests
+            print(f"[DEBUG RETRIEVER] Failed channel: {source} (error: {exc})")
             elapsed_ms = (time.perf_counter() - started) * 1000
             self._log_diagnostic(
                 RetrievalDiagnostics(

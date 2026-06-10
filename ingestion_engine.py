@@ -703,9 +703,9 @@ def compute_multi_dimensional_novelty(
         explanation="\n".join(explanation_logs)
     )
     # ═══════════════════════════════════════════════════════════════════
-# QUADRANT MATRIX CONFIGURATION (INJECT BELOW NOVELTY_WEIGHTS)
+# QUADRANT MATRIX CONFIGURATION
 # ═══════════════════════════════════════════════════════════════════
-VELOCITY_THRESHOLD = 0.40  # Midpoint boundary for Trend Velocity flux
+VELOCITY_THRESHOLD = 0.15  # Midpoint boundary for Trend Velocity flux
 
 def calculate_quadrant(novelty_score: float, velocity_score: float) -> tuple[str, str]:
     """
@@ -722,54 +722,6 @@ def calculate_quadrant(novelty_score: float, velocity_score: float) -> tuple[str
             return "⚠️ Copycats / Clones", "REJECTED"
         else:
             return "💤 Dormant Ecosystem Nodes", "REJECTED"
-
-    # ── [TIER 3] DUPLICATE, CLONE, AND WRAPPER DETECTOR ──
-    detected_anomaly_signature = "NONE"
-    if peak_similarity >= DUPLICATE_SIMILARITY_THRESHOLD:
-        detected_anomaly_signature = "POTENTIAL_FORK_OR_DIRECT_CLONE"
-    elif peak_similarity >= WRAPPER_SIMILARITY_THRESHOLD and tech_stack_novelty_index < 0.20:
-        detected_anomaly_signature = "POTENTIAL_SHALLOW_API_WRAPPER"
-
-    # Compile Structured Explanation Trace Layouts
-    explanation_logs = [
-        "Ecosystem Structural Similarity Trace (Top Nearest Neighbors):"
-    ]
-    for position, match in enumerate(nearest_neighbors[:3], 1):
-        explanation_logs.append(
-            f"  [{position}] {match['repo_id'].split('/')[-1]:<24} Cosine Similarity: {match['sim']:.4f} | Taxonomy: {match['category']}"
-        )
-        
-    diagnostic_traits = []
-    primary_conflict_match = nearest_neighbors[0]
-    if primary_conflict_match["category"] == target_cat:
-        diagnostic_traits.append(f"Identical technology domain space overlap ({target_cat})")
-        
-    intersecting_tokens = list(active_tags.intersection(set(primary_conflict_match["tags"])))
-    if intersecting_tokens:
-        diagnostic_traits.append(f"Shared architectural mechanisms: [{', '.join(intersecting_tokens[:3])}]")
-    if primary_conflict_match["sim"] > 0.82:
-        diagnostic_traits.append("Highly convergent implementation architecture structures detected")
-
-    explanation_logs += [
-        "",
-        "Architectural Explainability Diagnostics:",
-        f"  • {'; '.join(diagnostic_traits) if diagnostic_traits else 'No dangerous component pattern convergences flagged.'}",
-        "",
-        "Calculated Dimensional Matrix Sub-Novelty Indexes:",
-        f"  >> Semantic Vector Distance     : {semantic_novelty_index:.4f}  [Weight: 60%]",
-        f"  >> Tech-Stack Jaccard Delta     : {tech_stack_novelty_index:.4f}  [Weight: 20%]",
-        f"  >> Domain Cluster Saturation    : {category_novelty_index:.4f}  [Weight: 10%]",
-        f"  >> Activity Energy Ratio        : {activity_novelty_index:.4f}  [Weight: 10%]",
-        f"  ───────────────────────────────────────────────────────────────────",
-        f"  [*] Consolidated Novelty Engine Index Output ===> {aggregated_novelty_index:.4f}"
-    ]
-
-    return NoveltyResult(
-        final=aggregated_novelty_index, semantic=semantic_novelty_index, tech_stack=tech_stack_novelty_index,
-        category=category_novelty_index, activity_dim=activity_novelty_index,
-        top_k=nearest_neighbors, corpus_size=corpus_volume, anomaly_tag=detected_anomaly_signature,
-        explanation="\n".join(explanation_logs)
-    )
 
 
 # ═══════════════════════════════════════════════════════════════════

@@ -1,0 +1,59 @@
+{
+  "created_at": 1781089615.424396,
+  "value": {
+    "created_at": "2022-04-10T02:09:17Z",
+    "delta_30d": 0,
+    "delta_3d": 0,
+    "delta_7d": 0,
+    "description": "An unofficial rules engine for the world's greatest card game.",
+    "discovery_band": "recently_active",
+    "discovery_category": "Game Development",
+    "extracted_paragraphs": [
+      "\u2694\ufe0f Forge: The Magic: The Gathering Rules Engine",
+      "Join the **Forge community** on Discord!",
+      "Forge** is a dynamic and open-source **Rules Engine** tailored for **Magic: The Gathering** enthusiasts. Developed by a community of passionate programmers, Forge allows players to explore the rich universe of MTG through a flexible, engaging platform.",
+      "Note:** Forge operates independently and is not affiliated with Wizards of the Coast.",
+      "\ud83c\udf1f Key Features **\ud83c\udf10 Cross-Platform Support:** Play on **Windows, Mac, Linux,** and **Android**. **\ud83d\udd27 Extensible Architecture:** Built in **Java**, Forge encourages developers to contribute by adding features and cards. **\ud83c\udfae Versatile Gameplay:** Dive into single-player modes or challenge opponents online!",
+      "\ud83d\udee0\ufe0f Installation Guide \ud83d\udce5 Desktop Installation **Latest Releases:** Download the latest version here. **Snapshot Build:** For the latest development version, grab the forge-gui-desktop tarball from our Snapshot Build. **Tip:** Extract to a new folder to prevent version conflicts. **User Data Management:** Previous players\u2019 data is preserved during upgrades. **Java Requirement:** Ensure you have **Java 17 or later** installed. \ud83d\udcf1 Android Installation _(Note: **Android 11** is the minimum requirement with at least **6GB RAM** to run smoothly. You need to enable **\"Install unknown apps\"** for Forge to initialize and update itself)_ Download the **APK** from the Snapshot Build. On the first launch, Forge will automatically download all necessary assets.",
+      "Forge offers various exciting gameplay options: \ud83c\udf0d Adventure Mode Embark on a thrilling single-player journey where you can: Explore an overworld map. Challenge diverse AI opponents. Collect cards and items to boost your abilities.",
+      "\ud83d\udd0d Quest Modes Engage in focused gameplay without the overworld exploration\u2014perfect for quick sessions!",
+      "\ud83e\udd16 AI Formats Test your skills against AI in multiple formats: **Sealed** **Draft** **Commander** **Cube",
+      "For comprehensive gameplay instructions, visit our User Guide.",
+      "Need help? Join our vibrant Discord community! \ud83d\udcdc Read the **#rules** and explore the **FAQ**. \u2753 Ask your questions in the **#help** channel for assistance.",
+      "We love community contributions! Interested in helping? Check out our Contributing Guidelines for details on how to get started.",
+      "Forge aims to deliver an immersive and customizable Magic: The Gathering experience for fans around the world. \ud83d\udcca Repository Statistics"
+    ],
+    "fork_count": 961,
+    "html_url": "https://github.com/Card-Forge/forge",
+    "id": "Card-Forge/forge",
+    "languages": [
+      "Java",
+      "Gnuplot",
+      "Python",
+      "Shell",
+      "AppleScript",
+      "Batchfile",
+      "JavaScript",
+      "Ruby",
+      "FreeMarker"
+    ],
+    "mentionable_users_count": 100,
+    "open_issues_count": 577,
+    "primary_language": "Java",
+    "pushed_at": "2026-06-10T10:53:51Z",
+    "pushed_days_ago": 0,
+    "readme_length": 4575,
+    "readme_to_codebase_ratio": 4.33e-06,
+    "star_count": 2429,
+    "topics": [
+      "adventure",
+      "ai",
+      "android",
+      "java",
+      "magic-the-gathering",
+      "quest",
+      "rules-engine"
+    ],
+    "updated_at": "2026-06-10T10:53:57Z"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "created_at": 1781090922.185598,
+  "value": {
+    "created_at": "2024-04-29T05:30:25Z",
+    "delta_30d": 0,
+    "delta_3d": 0,
+    "delta_7d": 0,
+    "description": "100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship.",
+    "discovery_band": "high_star",
+    "discovery_category": "RAG",
+    "extracted_paragraphs": [
+      "Deutsch | Espa\u00f1ol | fran\u00e7ais | \u65e5\u672c\u8a9e | \ud55c\uad6d\uc5b4 | Portugu\u00eas | \u0420\u0443\u0441\u0441\u043a\u0438\u0439 | \u4e2d\u6587",
+      "100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship. AI Agents \u00b7 Multi-agent Teams \u00b7 MCP Agents \u00b7 RAG \u00b7 Voice Agents \u00b7 Agent Skills \u00b7 Fine-tuning",
+      "Free step-by-step tutorials on Unwind AI Works with Claude \u00b7 Gemini \u00b7 OpenAI \u00b7 xAI \u00b7 Qwen \u00b7 Llama",
+      "\ud83d\ude80 Quick Start \ud83d\udcc2 Browse Templates \ud83d\udcda Step-by-Step Tutorials",
+      "You shouldn't have to rebuild the same RAG pipeline, agent loop, or MCP integration from scratch every time you start a new LLM project.",
+      "Awesome LLM Apps is a cookbook of ready-to-run templates** - starter code you can fork, customize, and ship as a production LLM app. Every template here is self-contained with full source code, not collected from elsewhere. \ud83d\udee0\ufe0f **Hand-built, not curated** - every template is original work, tested end-to-end before it ships. \ud83e\uddea **Runs in 3 commands** - no broken requirements.txt, no \"figure it out yourself\" scaffolding. \ud83e\udde0 **Covers the modern AI stack** - AI Agents, Multi-agent Teams, MCP Agents, Voice AI Agents, RAG, Agent Skills, Fine-tuning. \ud83c\udf10 **Provider-agnostic** - switch between Claude, Gemini, GPT, Llama, Qwen, xAI and others with a config change. \ud83d\udcda **Step-by-step tutorials** - every featured template has a free walkthrough on Unwind AI. \ud83d\udcb8 **Apache-2.0** - fork it, ship it, sell it. No paywall, no signup, no telemetry.",
+      "> \u2b50 **If this saves you time, star the repo - that's how the next developer discovers it.** \ud83d\ude80 Quick Start",
+      "> \ud83d\udcec Subscribe on Unwind AI to get new template drops + tutorials in your inbox. \ud83d\udcd1 Table of Contents",
+      "14 categories \u00b7 Click to expand \ud83c\udf31 Starter AI Agents \ud83d\ude80 Advanced AI Agents \ud83e\udd1d Multi-agent Teams \ud83d\udde3\ufe0f Voice AI Agents \ud83d\uddbc\ufe0f Generative UI and Agentic Frontends \ud83c\udfae Autonomous Game-Playing Agents \u267e\ufe0f MCP AI Agents \ud83d\udcc0 RAG Tutorials \ud83e\udde9 Awesome Agent Skills \ud83d\udcbe LLM Apps with Memory \ud83d\udcac Chat with X Tutorials \ud83c\udfaf LLM Optimization Tools \ud83d\udd27 LLM Fine-tuning Tutorials \ud83e\uddd1\u200d\ud83c\udfeb AI Agent Framework Crash Courses",
+      "\ud83d\udcc2 Featured AI Projects \ud83c\udf31 Starter AI Agents *Single-file agents that run with just an API key - a great place to start.* \ud83c\udf99\ufe0f AI Blog to Podcast Agent \u2764\ufe0f\u200d\ud83e\ude79 AI Breakup Recovery Agent \ud83d\udcca AI Data Analysis Agent \ud83e\ude7b AI Medical Imaging Agent \ud83d\ude02 AI Meme Generator Agent (Browser) \ud83c\udfb5 AI Music Generator Agent \ud83d\udeeb AI Travel Agent (Local & Cloud) \u2728 Gemini Multimodal Agent \ud83d\udd04 Mixture of Agents \ud83d\udcca xAI Finance Agent \ud83d\udd0d OpenAI Research Agent \ud83d\udd78\ufe0f Web Scraping AI Agent (Local & Cloud SDK) \ud83d\ude80 Advanced AI Agents *Production-style agents with tools, memory, and multi-step reasoning.* \ud83c\udfda\ufe0f \ud83c\udf4c AI Home Renovation Agent with Nano Banana Pro \ud83e\udde0 DevPulse AI - Multi-Agent Signal Intelligence \ud83d\udd0d AI Deep Research Agent \ud83d\udcca AI VC Due Diligence Agent Team \ud83d\udd2c AI Research Planner & Executor (Google Interactions API) \ud83e\udd1d AI Consultant Agent \ud83c\udfd7\ufe0f AI System Architect Agent \ud83d\udcb0 AI Financial Coach Agent \ud83c\udfac AI Movie Production Agent \ud83d\udcc8 AI Investment Agent \ud83d\udce1 Earnings Call Analyst Agent \ud83c\udfcb\ufe0f\u200d\u2642\ufe0f AI Health & Fitness Agent \ud83d\ude80 AI Product Launch Intelligence Agent \ud83d\udd0d AI Fraud Investigation Agent \ud83d\uddde\ufe0f AI Journalist Agent \ud83e\udde0 AI Mental Wellbeing Agent \ud83d\udcd1 AI Meeting Agent \ud83e\uddec AI Self-Evolving Agent \ud83d\udc68\ud83c\udffb\u200d\ud83d\udcbc AI Sales Intelligence Agent Team \ud83c\udfa7 AI Social Media News and Podcast Agent \ud83c\udf10 Openwork - Open Browser Automation Agent \u2197 external \ud83d\udee1\ufe0f Trust-Gated Multi-Agent Research Team \ud83e\udd1d Multi-agent Teams *Multiple agents collaborating to accomplish complex, cross-domain tasks.* \ud83e\uddf2 AI Competitor Intelligence Agent Team \ud83d\udcb2 AI Finance Agent Team \ud83c\udfa8 AI Game Design Agent Team \ud83e\udded AG2 Adaptive Research Team \ud83d\udc68\u200d\u2696\ufe0f AI Legal Agent Team (Cloud & Local) \ud83d\udcbc AI Recruitment Agent Team \ud83c\udfe0 AI Real Estate Agent Team \ud83d\udc68\u200d\ud83d\udcbc AI Services Agency (CrewAI) \ud83d\udc68\u200d\ud83c\udfeb AI Teaching Agent Team \ud83d\udcbb Multimodal Coding Agent Team \u2728 Multimodal Design Agent Team \ud83c\udfa8 \ud83c\udf4c Multimodal UI/UX Feedback Agent Team with Nano Banana \ud83c\udf0f AI Travel Planner Agent Team \ud83d\udde3\ufe0f Voice AI Agents *Speech-in, speech-out agents using real-time voice APIs.* \ud83d\udde3\ufe0f AI Audio Tour Agent \ud83d\udcde Customer Support Voice Agent \ud83d\udee1\ufe0f Insurance Claim Live Agent Team \ud83d\udd0a Voice RAG Agent (OpenAI SDK) \ud83c\udf99\ufe0f OpenSource Voice Dictation Agent (Wispr Flow clone) \u2197 external \ud83d\uddbc\ufe0f Generative UI and Agentic Frontends *Agents that render interactive UI components \u2014 forms, cards, charts, editable plans \u2014 not just text.* \ud83d\uddc2\ufe0f Generative UI Starter Project \ud83e\ude99 AI Financial Coach Agent \ud83d\udcca AI Dashboard Canvas Agent \ud83d\udee0\ufe0f AI MCP App Builder \u2708\ufe0f MCP Apps Generative UI Showcase \ud83c\udf9b\ufe0f AI Shadcn Component Generator \ud83d\udd0d AI Deep Research Agent \ud83c\udfae Autonomous Game-Playing Agents *Agents that play games end-to-end - reasoning, strategy, and action.* \ud83c\udfae AI 3D Pygame Agent \u265c AI Chess Agent \ud83c\udfb2 AI Tic-Tac-Toe Agent \u267e\ufe0f MCP AI Agents *Agents that connect to external tools and data via Model Context Protocol.* \u267e\ufe0f Browser MCP Agent \ud83d\udc19 GitHub MCP Agent \ud83d\udcd1 Notion MCP Agent \ud83c\udf0d AI Travel Planner MCP Agent \ud83d\udd00 Multi-MCP Agent Router \ud83d\udcc0 RAG (Retrieval Augmented Generation) *Retrieval pipelines - from simple chains to agentic and multi-source.* \ud83d\udd25 Agentic RAG with Embedding Gemma \ud83e\uddd0 Agentic RAG with Reasoning \ud83d\udcf0 AI Blog Search (RAG) \ud83d\udd0d Autonomous RAG \ud83d\udd04 Contextual AI RAG Agent \ud83d\udd04 Corrective RAG (CRAG) \ud83d\udc0b Deepseek Local RAG Agent \ud83e\udd14 Gemini Agentic RAG \ud83d\udc40 Hybrid Search RAG (Cloud) \ud83d\udd04 Llama 3.1 Local RAG \ud83d\udda5\ufe0f Local Hybrid Search RAG \ud83e\uddec Multimodal Agentic RAG \ud83e\udd99 Local RAG Agent \ud83e\udde9 RAG-as-a-Service \u2728 RAG Agent with Cohere \u26d3\ufe0f Basic RAG Chain \ud83d\udce0 RAG with Database Routing \ud83d\uddbc\ufe0f Vision RAG \ud83e\ude7a RAG Failure Diagnostics Clinic \ud83d\udd78\ufe0f Knowledge Graph RAG with Citations \ud83e\udde9 Awesome Agent Skills *Ready-to-use agent skill files you can plug into any AI agent or LLM workflow.* \u267e\ufe0f Self-Improving Agent Skills - Automatically optimize agent skills using Gemini and ADK",
+      "\ud83d\udcbe LLM Apps with Memory Tutorials *Agents and chatbots that remember conversations and user state across sessions.* \ud83d\udcbe AI ArXiv Agent with Memory \ud83d\udee9\ufe0f AI Travel Agent with Memory \ud83d\udcac Llama3 Stateful Chat \ud83d\udcdd LLM App with Personalized Memory \ud83d\uddc4\ufe0f Local ChatGPT Clone with Memory \ud83e\udde0 Multi-LLM Application with Shared Memory \ud83d\udcac Chat with X Tutorials *Turn any data source into a chat interface.* \ud83d\udcac Chat with GitHub (GPT & Llama3) \ud83d\udce8 Chat with Gmail \ud83d\udcc4 Chat with PDF (GPT & Llama3) \ud83d\udcda Chat with Research Papers (ArXiv) (GPT & Llama3) \ud83d\udcdd Chat with Substack \ud83d\udcfd\ufe0f Chat with YouTube Videos \ud83c\udfaf LLM Optimization Tools *Reduce token usage, context size, and API cost without losing quality.* \ud83c\udfaf Toonify Token Optimization - Reduce LLM API costs by 30\u201360% using TOON format \ud83e\udde0 Headroom Context Optimization - Reduce LLM API costs by 50\u201390% \ud83d\udd27 LLM Fine-tuning Tutorials *End-to-end fine-tuning recipes for open-source models.* Gemma 3 Fine-tuning Llama 3.2 Fine-tuning \ud83e\uddd1\u200d\ud83c\udfeb AI Agent Framework Crash Course *Deep-dive tutorials on the major agent frameworks.",
+      "Google ADK Crash Course Starter agent; model\u2011agnostic (OpenAI, Claude) Structured outputs (Pydantic) Tools: built\u2011in, function, third\u2011party, MCP tools Memory; callbacks; Plugins Simple multi\u2011agent; Multi\u2011agent patterns",
+      "OpenAI Agents SDK Crash Course Starter agent; function calling; structured outputs Tools: built\u2011in, function, third\u2011party integrations Memory; callbacks; evaluation Multi\u2011agent patterns; agent handoffs Swarm orchestration; routing logic \ud83d\ude4f Built by",
+      "Created and maintained by Shubham Saboo with contributions from the amazing community members.",
+      "> \ud83c\udf1f **Don't miss future drops - star the repo to get notified when new templates ship.** \ud83d\udcdc License",
+      "Apache-2.0. See LICENSE. Fork it, ship it, sell it."
+    ],
+    "fork_count": 16947,
+    "html_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "id": "Shubhamsaboo/awesome-llm-apps",
+    "languages": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Dockerfile",
+      "Shell",
+      "PLpgSQL",
+      "Batchfile"
+    ],
+    "mentionable_users_count": 84,
+    "open_issues_count": 13,
+    "primary_language": "Python",
+    "pushed_at": "2026-06-03T06:36:19Z",
+    "pushed_days_ago": 7,
+    "readme_length": 21127,
+    "readme_to_codebase_ratio": 9.932e-05,
+    "star_count": 114132,
+    "topics": [
+      "agents",
+      "llms",
+      "python",
+      "rag"
+    ],
+    "updated_at": "2026-06-10T11:24:39Z"
+  }
+}

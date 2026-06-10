@@ -1,0 +1,57 @@
+{
+  "created_at": 1781091395.273165,
+  "value": {
+    "created_at": "2018-09-25T09:28:30Z",
+    "delta_30d": 2,
+    "delta_3d": 0,
+    "delta_7d": 0,
+    "description": "Orchestrate Geospatial (Meta)Data Management Workflows and Manage FAIR Services",
+    "discovery_band": "recently_active",
+    "discovery_category": "Infrastructure",
+    "extracted_paragraphs": [
+      "Orchestrate Geospatial (Meta)Data Management Workflows and Manage FAIR Services",
+      "`geoflow provides an engine to facilitate the orchestration and execution of metadata-driven data management workflows, in compliance with FAIR (Findable, Accessible, Interoperable and Reusable) data management principles. By means of a pivot metadata model, relying on the DublinCore standard, a unique source of metadata can be used to operate multiple and inter-connected data management actions. Users can also customise their own workflows by creating specific actions but the library comes with a set of native actions that have been identified as key steps most data managers, in particular actions oriented to the publication on the web of metadata and data resources to provide standard discovery and access services.",
+      "At first, default actions of the library were meant to focus on providing turn-key actions for geospatial (meta)data: by creating manage geospatial (meta)data complying with ISO/TC211 and OGC geographic information standards (eg 19115/19119/19110/19139) and related best practices (eg. INSPIRE); and by facilitating extraction, reading and publishing of standard geospatial (meta)data within widely used software that compound a Spatial Data Infrastructure (SDI), including spatial databases (eg. 'PostGIS'), metadata catalogues (eg. 'GeoNetwork', CSW servers), data servers (eg. GeoServer).",
+      "The library was then extended to actions for other domains: biodiversity (meta)data standard management including handling of EML metadata, and their management with DataOne servers, in situ sensors, remote sensing and model outputs (meta)data standard management by handling part of CF conventions, 'NetCDF' data format and OPeNDAP access protocol, and their management with Thredds servers, generic / domain agnostic (meta)data standard managers (Dublin Core, DataCite), to facilitate the publication of data within (meta)data repositories such as Zenodo or DataVerse.",
+      "The execution of several actions will then allow to cross-reference (meta)data resources in each action performed, offering a way to bind resources between each other (eg. reference 'Zenodo' DOIs in 'GeoNetwork'/'Geoserver' metadata, or vice versa reference 'Geonetwork'/Geoserver' links in 'Zenodo' or EML metadata). The use of standardized configuration files (JSON format) allows fully reproducible workflows to facilitate the work of data and information managers.",
+      "Please check the online documentation for more details! **(documentation in preparation)",
+      "For questions about using or contributing to geoflow, you can ask them in the discussions panel: https://github.com/r-geoflow/geoflow/discussions Sponsors",
+      "Many thanks to the following organizations that have provided fundings for strenghtening the geoflow package:",
+      "The following projects have contributed to strenghten geoflow: **Blue-Cloud** _Blue-Cloud has received funding from the European Union's Horizon programme call BG-07-2019-2020, topic: [A] 2019 - Blue Cloud services, Grant Agreement No.862409._ **CCSAFE** **G2OI** project, cofinanced by the European Union, the Reunion region, and the French Republic.",
+      "For geoflow sponsoring/funding new developments, enhancements, support requests, please contact me by e-mail Citation",
+      "We thank in advance people that use geoflow` for citing it in their work / publication(s). For this, please use the citation provided at this link ](https://doi.org//10.5281/zenodo.3138920)"
+    ],
+    "fork_count": 16,
+    "html_url": "https://github.com/r-geoflow/geoflow",
+    "id": "r-geoflow/geoflow",
+    "languages": [
+      "R"
+    ],
+    "mentionable_users_count": 9,
+    "open_issues_count": 24,
+    "primary_language": "R",
+    "pushed_at": "2026-06-10T11:29:01Z",
+    "pushed_days_ago": 0,
+    "readme_length": 5803,
+    "readme_to_codebase_ratio": 0.00211692,
+    "star_count": 64,
+    "topics": [
+      "data",
+      "dataverse",
+      "fair",
+      "geospatial",
+      "inspire",
+      "iso",
+      "metadata",
+      "ocs",
+      "ogc",
+      "orchestrator",
+      "postgis",
+      "r",
+      "spatial",
+      "workflow",
+      "zenodo"
+    ],
+    "updated_at": "2026-06-10T11:29:06Z"
+  }
+}

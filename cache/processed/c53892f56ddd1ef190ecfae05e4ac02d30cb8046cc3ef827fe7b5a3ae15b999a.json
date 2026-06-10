@@ -1,0 +1,51 @@
+{
+  "created_at": 1781091374.474897,
+  "value": {
+    "created_at": "2013-12-15T14:31:41Z",
+    "delta_30d": 0,
+    "delta_3d": 0,
+    "delta_7d": 0,
+    "description": "Papers from the computer science community to read and discuss.",
+    "discovery_band": "high_star",
+    "discovery_category": "AI",
+    "extracted_paragraphs": [
+      "Papers We Love** (*PWL*) is a community built around reading, discussing and learning more about academic computer science papers. This repository serves as a directory of some of the best papers the community can find, bringing together documents scattered across the web. You can also visit the Papers We Love site for more info.",
+      "Due to licenses we cannot always host the papers themselves (when we do, you will see a :scroll: emoji next to its title in the directory README) but we can provide links to their locations.",
+      "If you enjoy the papers, perhaps stop by a local chapter meetup and join in on the vibrant discussions around them. You can also discuss *PWL* events, the content in this repository, and/or anything related to *PWL* on our Discord server. Chapters",
+      "Let us know if you are interested in starting one in your city!",
+      "All of our meetups follow our Code of Conduct. Past Presentations",
+      "Check out our YouTube channel for videos and video playlists. Info",
+      "We're looking for pull requests related to papers we should add, better organization of the papers we do have, and/or links to other paper-repos we should point to. Other Good Places to Find Papers 2 Minute Papers alphaXiv (Adds a discussion layer; replace \"arxiv\" with \"alphaxiv\" in an arXiv paper URL) arXiv Paper Repository Bell System Technical Journal, 1922-1983 Best Paper Awards in Computer Science cat-v.org eugeneyan/applied-ml GitHub repository Facebook Functional Programming Books Review Google Scholar (choose a subcategory) Gradual Typing Bibliography Lobste.rs tagged as PDF Microsoft Research MIT's Artificial Intelligence Lab Publications MIT's Distributed System's Reading Group netlib Readings in Distributed Systems Research Papers from Robert Harper, Carnegie Mellon University SciRate Security Data Science Papers Services Engineering Reading List The Morning Paper y-archive",
+      "Please check out our wiki-page for links to blogs, books, exchanges that are worth a good read. How To Read a Paper",
+      "Reading a paper is not the same as reading a blogpost or a novel. Here are a few handy resources to help you get started. How to read an academic article Advice on reading academic papers How to read and understand a scientific paper Should I Read Papers? The Refreshingly Rewarding Realm of Research Papers How to read a paper Applications/Ideas built around Papers We Love Love a Paper - @loveapaper Download papers",
+      "This will scrape markdown files for links to PDFs and download papers to their respective directories.",
+      "See README.md for more options. Contributing Guidelines",
+      "Please take a look at our CONTRIBUTING.md file. Copyright",
+      "The name \"Papers We Love\" and the logos for the organization are copyrighted, and under the ownership of Papers We Love Ltd, all rights reserved. When starting a chapter, please review our guidelines and ask us about using the logo."
+    ],
+    "fork_count": 6372,
+    "html_url": "https://github.com/papers-we-love/papers-we-love",
+    "id": "papers-we-love/papers-we-love",
+    "languages": [
+      "Shell"
+    ],
+    "mentionable_users_count": 100,
+    "open_issues_count": 2,
+    "primary_language": "Shell",
+    "pushed_at": "2026-05-17T12:22:19Z",
+    "pushed_days_ago": 23,
+    "readme_length": 5330,
+    "readme_to_codebase_ratio": 2.255e-05,
+    "star_count": 106931,
+    "topics": [
+      "awesome",
+      "computer-science",
+      "meetup",
+      "papers",
+      "programming",
+      "read-papers",
+      "theory"
+    ],
+    "updated_at": "2026-06-10T11:05:10Z"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "created_at": 1781091415.827178,
+  "value": "The Wikimedia Foundation operates some of the largest collaboratively edited\nreference projects in the world, including Wikipedia. Our infrastructure powers\nsome of the most highly-trafficked sites on the web, serving content in over a\nhundred languages to more than half a billion people each month. We use Puppet\nto manage our server configuration. This is our Puppet repository.\n\nFor an overview of how we use Puppet, and a review of the code conventions and\npatterns that apply to this repository, see:\n  * https://wikitech.wikimedia.org/wiki/Puppet_coding\n\nThe code in this repository is authored and maintained by Wikimedia engineers\nand a vibrant community of volunteer contributors. Get involved!\n\n* https://wikitech.wikimedia.org/wiki/Get_involved\n* libera.chat: #wikimedia-operations or #wikimedia-sre\n"
+}
