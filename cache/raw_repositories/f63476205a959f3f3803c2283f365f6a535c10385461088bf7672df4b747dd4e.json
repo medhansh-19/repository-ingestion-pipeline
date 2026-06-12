@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091344.064063,
+  "created_at": 1781113332.623425,
   "value": {
     "_discovery_band": "high_star",
     "_discovery_category": "Databases",
@@ -24,8 +24,8 @@
     "downloads_url": "https://api.github.com/repos/f/prompts.chat/downloads",
     "events_url": "https://api.github.com/repos/f/prompts.chat/events",
     "fork": false,
-    "forks": 21225,
-    "forks_count": 21225,
+    "forks": 21228,
+    "forks_count": 21228,
     "forks_url": "https://api.github.com/repos/f/prompts.chat/forks",
     "full_name": "f/prompts.chat",
     "git_commits_url": "https://api.github.com/repos/f/prompts.chat/git/commits{/sha}",
@@ -62,7 +62,7 @@
     "milestones_url": "https://api.github.com/repos/f/prompts.chat/milestones{/number}",
     "mirror_url": null,
     "name": "prompts.chat",
-    "network_count": 21225,
+    "network_count": 21228,
     "node_id": "R_kgDOIj6G7A",
     "notifications_url": "https://api.github.com/repos/f/prompts.chat/notifications{?since,all,participating}",
     "open_issues": 51,
@@ -102,7 +102,7 @@
     "releases_url": "https://api.github.com/repos/f/prompts.chat/releases{/id}",
     "size": 388506,
     "ssh_url": "git@github.com:f/prompts.chat.git",
-    "stargazers_count": 163507,
+    "stargazers_count": 163521,
     "stargazers_url": "https://api.github.com/repos/f/prompts.chat/stargazers",
     "statuses_url": "https://api.github.com/repos/f/prompts.chat/statuses/{sha}",
     "subscribers_count": 1638,
@@ -133,11 +133,11 @@
       "typescript"
     ],
     "trees_url": "https://api.github.com/repos/f/prompts.chat/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:34:49Z",
+    "updated_at": "2026-06-10T17:37:25Z",
     "url": "https://api.github.com/repos/f/prompts.chat",
     "visibility": "public",
-    "watchers": 163507,
-    "watchers_count": 163507,
+    "watchers": 163521,
+    "watchers_count": 163521,
     "web_commit_signoff_required": false
   }
 }

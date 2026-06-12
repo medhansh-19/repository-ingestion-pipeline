@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091280.994758,
+  "created_at": 1781113181.5551622,
   "value": {
     "created_at": "2014-12-24T17:49:19Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "discovery_band": "high_star",
-    "discovery_category": "Security",
+    "discovery_category": "Databases",
     "extracted_paragraphs": [
       "](https://www.firsttimersonly.com/) ](https://discord.gg/PRyKn3Vbay) ](https://insights.linuxfoundation.org/project/freecodecamp/repository/freecodecamp-freecodecamp) freeCodeCamp.org's open-source codebase and curriculum",
       "freeCodeCamp.org is a friendly community where you can learn to code for free. It is run by a donor-supported 501(c)(3) charity to help millions of busy adults transition into tech. Our community has already helped more than 100,000 people get their first developer job.",
@@ -44,13 +44,13 @@
       "HTML"
     ],
     "mentionable_users_count": 100,
-    "open_issues_count": 174,
+    "open_issues_count": 172,
     "primary_language": "TypeScript",
-    "pushed_at": "2026-06-10T10:46:35Z",
+    "pushed_at": "2026-06-10T16:33:15Z",
     "pushed_days_ago": 0,
     "readme_length": 6646,
-    "readme_to_codebase_ratio": 1.129e-05,
-    "star_count": 446557,
+    "readme_to_codebase_ratio": 1.128e-05,
+    "star_count": 446590,
     "topics": [
       "careers",
       "certification",
@@ -68,6 +68,6 @@
       "react",
       "teachers"
     ],
-    "updated_at": "2026-06-10T11:28:18Z"
+    "updated_at": "2026-06-10T17:11:37Z"
   }
 }

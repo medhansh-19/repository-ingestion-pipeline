@@ -3,7 +3,7 @@ from __future__ import annotations
 import asyncio
 from datetime import datetime, timedelta, timezone
 
-from candidate_retrieval import (
+from retrieval import (
     CandidateRepo,
     CandidateRetriever,
     InMemoryAsyncCache,

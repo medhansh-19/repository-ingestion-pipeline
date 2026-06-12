@@ -1,0 +1,43 @@
+{
+  "created_at": 1781113611.491432,
+  "value": {
+    "created_at": "2017-05-15T12:35:21Z",
+    "delta_30d": 0,
+    "delta_3d": 0,
+    "delta_7d": 0,
+    "description": "Open Source Interpretation Platform https://voxbento.com",
+    "discovery_band": "recently_active",
+    "discovery_category": "Databases",
+    "extracted_paragraphs": [
+      "Voxbento is a real-time interpretation platform for live events. It provides a browser-first, zero-install experience for simultaneous interpreters, allowing them to monitor the main floor video via Jitsi and broadcast translated audio to attendees with low latency.",
+      "Interpreters stream live audio via WebRTC/WHIP \u2192 MediaMTX \u2192 WHEP (WebRTC playback). Booth coordination (who is active, relay handoff, chat) runs over WebSocket.",
+      "Option 1 \u2014 Docker Compose (everything in containers)",
+      "All services (portal, MediaMTX, Jitsi) start with one command:",
+      "Open http://localhost:8000 \u2014 all services are running.",
+      "For detailed API documentation, environment variables, and configuration, visit docs.voxbento.com. Native development setup details can also be found in CONTRIBUTING.md.",
+      "Upgrade Notes API Key Encryption & Rotation A mandatory environment variable API_KEY_ENCRYPTION_KEY securely encrypts third-party API keys in the database. You must generate a secure key (e.g., using openssl rand -hex 32) and add it to your .env file before starting the application. **Rotation**: To rotate keys without breaking existing database entries, provide a comma-separated list of keys. Voxbento will encrypt new tokens using the *first* key, but will use *all* keys to attempt decryption. Optional NVIDIA Transcription NVIDIA Riva support is now an optional dependency to reduce the default installation footprint. If you intend to run NVIDIA transcription models, you must explicitly install the optional package:"
+    ],
+    "fork_count": 31,
+    "html_url": "https://github.com/fossasia/voxbento",
+    "id": "fossasia/voxbento",
+    "languages": [
+      "Python",
+      "HTML",
+      "JavaScript",
+      "CSS",
+      "TypeScript",
+      "Dockerfile",
+      "Mako"
+    ],
+    "mentionable_users_count": 4,
+    "open_issues_count": 11,
+    "primary_language": "Python",
+    "pushed_at": "2026-06-10T17:38:14Z",
+    "pushed_days_ago": 0,
+    "readme_length": 2976,
+    "readme_to_codebase_ratio": 0.00020172,
+    "star_count": 1476,
+    "topics": [],
+    "updated_at": "2026-06-10T17:38:18Z"
+  }
+}

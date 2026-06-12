@@ -1,8 +1,8 @@
 {
-  "created_at": 1781090977.407656,
+  "created_at": 1781113160.404663,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Infrastructure",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/sindresorhus/awesome/{archive_format}{/ref}",
     "archived": false,
@@ -24,8 +24,8 @@
     "downloads_url": "https://api.github.com/repos/sindresorhus/awesome/downloads",
     "events_url": "https://api.github.com/repos/sindresorhus/awesome/events",
     "fork": false,
-    "forks": 35361,
-    "forks_count": 35361,
+    "forks": 35365,
+    "forks_count": 35365,
     "forks_url": "https://api.github.com/repos/sindresorhus/awesome/forks",
     "full_name": "sindresorhus/awesome",
     "git_commits_url": "https://api.github.com/repos/sindresorhus/awesome/git/commits{/sha}",
@@ -62,7 +62,7 @@
     "milestones_url": "https://api.github.com/repos/sindresorhus/awesome/milestones{/number}",
     "mirror_url": null,
     "name": "awesome",
-    "network_count": 35361,
+    "network_count": 35365,
     "node_id": "MDEwOlJlcG9zaXRvcnkyMTczNzQ2NQ==",
     "notifications_url": "https://api.github.com/repos/sindresorhus/awesome/notifications{?since,all,participating}",
     "open_issues": 81,
@@ -102,10 +102,10 @@
     "releases_url": "https://api.github.com/repos/sindresorhus/awesome/releases{/id}",
     "size": 1565,
     "ssh_url": "git@github.com:sindresorhus/awesome.git",
-    "stargazers_count": 474458,
+    "stargazers_count": 474535,
     "stargazers_url": "https://api.github.com/repos/sindresorhus/awesome/stargazers",
     "statuses_url": "https://api.github.com/repos/sindresorhus/awesome/statuses/{sha}",
-    "subscribers_count": 8213,
+    "subscribers_count": 8215,
     "subscribers_url": "https://api.github.com/repos/sindresorhus/awesome/subscribers",
     "subscription_url": "https://api.github.com/repos/sindresorhus/awesome/subscription",
     "svn_url": "https://github.com/sindresorhus/awesome",
@@ -120,11 +120,11 @@
       "unicorns"
     ],
     "trees_url": "https://api.github.com/repos/sindresorhus/awesome/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:27:43Z",
+    "updated_at": "2026-06-10T17:37:29Z",
     "url": "https://api.github.com/repos/sindresorhus/awesome",
     "visibility": "public",
-    "watchers": 474458,
-    "watchers_count": 474458,
+    "watchers": 474535,
+    "watchers_count": 474535,
     "web_commit_signoff_required": false
   }
 }

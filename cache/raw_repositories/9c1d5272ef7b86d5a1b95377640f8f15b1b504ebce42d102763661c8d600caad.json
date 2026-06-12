@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091028.6801732,
+  "created_at": 1781113284.8357792,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Infrastructure",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/{archive_format}{/ref}",
     "archived": false,
@@ -24,8 +24,8 @@
     "downloads_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/downloads",
     "events_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/events",
     "fork": false,
-    "forks": 13636,
-    "forks_count": 13636,
+    "forks": 13638,
+    "forks_count": 13638,
     "forks_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/forks",
     "full_name": "trimstray/the-book-of-secret-knowledge",
     "git_commits_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/git/commits{/sha}",
@@ -62,7 +62,7 @@
     "milestones_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/milestones{/number}",
     "mirror_url": null,
     "name": "the-book-of-secret-knowledge",
-    "network_count": 13636,
+    "network_count": 13638,
     "node_id": "MDEwOlJlcG9zaXRvcnkxMzgzOTMxMzk=",
     "notifications_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/notifications{?since,all,participating}",
     "open_issues": 153,
@@ -102,10 +102,10 @@
     "releases_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/releases{/id}",
     "size": 1748,
     "ssh_url": "git@github.com:trimstray/the-book-of-secret-knowledge.git",
-    "stargazers_count": 227558,
+    "stargazers_count": 227592,
     "stargazers_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/stargazers",
     "statuses_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/statuses/{sha}",
-    "subscribers_count": 2787,
+    "subscribers_count": 2786,
     "subscribers_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/subscribers",
     "subscription_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/subscription",
     "svn_url": "https://github.com/trimstray/the-book-of-secret-knowledge",
@@ -134,11 +134,11 @@
       "sysops"
     ],
     "trees_url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:28:46Z",
+    "updated_at": "2026-06-10T17:38:17Z",
     "url": "https://api.github.com/repos/trimstray/the-book-of-secret-knowledge",
     "visibility": "public",
-    "watchers": 227558,
-    "watchers_count": 227558,
+    "watchers": 227592,
+    "watchers_count": 227592,
     "web_commit_signoff_required": false
   }
 }

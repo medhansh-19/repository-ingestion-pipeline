@@ -1,5 +1,5 @@
 {
-  "created_at": 1781089596.851398,
+  "created_at": 1781113473.815605,
   "value": {
     "_discovery_band": "high_star",
     "_discovery_category": "AI Agents",
@@ -124,10 +124,10 @@
     "releases_url": "https://api.github.com/repos/ultraworkers/claw-code/releases{/id}",
     "size": 24138,
     "ssh_url": "git@github.com:ultraworkers/claw-code.git",
-    "stargazers_count": 193566,
+    "stargazers_count": 193578,
     "stargazers_url": "https://api.github.com/repos/ultraworkers/claw-code/stargazers",
     "statuses_url": "https://api.github.com/repos/ultraworkers/claw-code/statuses/{sha}",
-    "subscribers_count": 1999,
+    "subscribers_count": 1998,
     "subscribers_url": "https://api.github.com/repos/ultraworkers/claw-code/subscribers",
     "subscription_url": "https://api.github.com/repos/ultraworkers/claw-code/subscription",
     "svn_url": "https://github.com/ultraworkers/claw-code",
@@ -136,11 +136,11 @@
     "temp_clone_token": "",
     "topics": [],
     "trees_url": "https://api.github.com/repos/ultraworkers/claw-code/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:03:22Z",
+    "updated_at": "2026-06-10T17:44:15Z",
     "url": "https://api.github.com/repos/ultraworkers/claw-code",
     "visibility": "public",
-    "watchers": 193566,
-    "watchers_count": 193566,
+    "watchers": 193578,
+    "watchers_count": 193578,
     "web_commit_signoff_required": false
   }
 }

@@ -5,9 +5,9 @@ from datetime import datetime, timedelta, timezone
 from typing import Any
 
 import ingestion_engine
-from github_discovery import DiscoveryConfig, GitHubDiscoveryEngine
-from readme_processor import process_markdown, process_readme_payload
-from repository_enricher import RepositoryEnricher
+from acquisition.github_discovery import DiscoveryConfig, GitHubDiscoveryEngine
+from utils.readme_processor import process_markdown, process_readme_payload
+from acquisition.repository_enricher import RepositoryEnricher
 
 
 class FakeGitHubClient:
@@ -54,7 +54,10 @@ The architecture includes a scheduler, plugin runtime, event router, and integra
 def test_repository_enricher_generates_osiris_payload() -> None:
     now = datetime.now(timezone.utc)
     client = EnricherFakeClient(now)
-    result = RepositoryEnricher(client).enrich({"full_name": "owner/repo", "_discovery_category": "AI", "_discovery_band": "mid_sized"})
+    enricher = RepositoryEnricher(client)
+    # Force fallback to REST for this test
+    enricher.graphql_client.get_repository = lambda owner, name: None
+    result = enricher.enrich({"full_name": "owner/repo", "_discovery_category": "AI", "_discovery_band": "mid_sized"})
 
     assert result is not None
     payload = result.payload
@@ -85,18 +88,13 @@ def test_discovery_balances_bands_and_deduplicates() -> None:
 
 def test_ingestion_engine_uses_internal_neighbors_when_qdrant_unavailable() -> None:
     original_qdrant_ok = ingestion_engine._QDRANT_OK
-    original_history = list(ingestion_engine._internal_corpus_history)
-    original_timeline = list(ingestion_engine._growth_timeline_stream)
     ingestion_engine._QDRANT_OK = False
-    ingestion_engine._internal_corpus_history.clear()
-    ingestion_engine._growth_timeline_stream.clear()
+    store = ingestion_engine.CorpusStore()
     try:
-        first = ingestion_engine.ingest_repository(_osiris_repo("owner/seed"), auto_index=True)
-        second = ingestion_engine.ingest_repository(_osiris_repo("owner/similar"), auto_index=True)
+        first = ingestion_engine.ingest_repository(_osiris_repo("owner/seed"), corpus_store=store, auto_index=True)
+        second = ingestion_engine.ingest_repository(_osiris_repo("owner/similar"), corpus_store=store, auto_index=True)
     finally:
         ingestion_engine._QDRANT_OK = original_qdrant_ok
-        ingestion_engine._internal_corpus_history[:] = original_history
-        ingestion_engine._growth_timeline_stream[:] = original_timeline
 
     assert first.novelty.final == 1.0
     assert second.novelty.top_k

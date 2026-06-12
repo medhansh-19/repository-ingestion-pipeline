@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091074.769738,
+  "created_at": 1781113356.1734579,
   "value": {
     "created_at": "2023-10-06T22:08:27Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "discovery_band": "high_star",
-    "discovery_category": "Infrastructure",
+    "discovery_category": "Databases",
     "extracted_paragraphs": [
       "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform designed to operate entirely offline.** It supports various LLM runners like **Ollama** and **OpenAI-compatible APIs**, with **built-in inference engine** for RAG, making it a **powerful AI deployment solution**.",
       "Passionate about open-source AI? Join our team \u2192",
@@ -38,7 +38,7 @@
       "If you have any questions, suggestions, or need assistance, please open an issue or join our Open WebUI Discord community to connect with us! \ud83e\udd1d Star History",
       "Created by Timothy Jaeryang Baek - Let's make Open WebUI even more amazing together! \ud83d\udcaa"
     ],
-    "fork_count": 20223,
+    "fork_count": 20235,
     "html_url": "https://github.com/open-webui/open-webui",
     "id": "open-webui/open-webui",
     "languages": [
@@ -55,13 +55,13 @@
       "Makefile"
     ],
     "mentionable_users_count": 100,
-    "open_issues_count": 386,
+    "open_issues_count": 388,
     "primary_language": "Python",
     "pushed_at": "2026-06-10T01:26:59Z",
     "pushed_days_ago": 0,
     "readme_length": 15863,
     "readme_to_codebase_ratio": 4.121e-05,
-    "star_count": 140929,
+    "star_count": 140971,
     "topics": [
       "ai",
       "llm",
@@ -79,6 +79,6 @@
       "ui",
       "webui"
     ],
-    "updated_at": "2026-06-10T11:29:36Z"
+    "updated_at": "2026-06-10T17:30:28Z"
   }
 }

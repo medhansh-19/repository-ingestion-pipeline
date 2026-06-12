@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091365.650552,
+  "created_at": 1781113512.521209,
   "value": {
     "created_at": "2023-03-16T09:21:07Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
     "discovery_band": "high_star",
-    "discovery_category": "Frontend",
+    "discovery_category": "Observability",
     "extracted_paragraphs": [
       "AutoGPT: Build, Deploy, and Run AI Agents",
       "Deutsch | Espa\u00f1ol | fran\u00e7ais | \u65e5\u672c\u8a9e | \ud55c\uad6d\uc5b4 | Portugu\u00eas | \u0420\u0443\u0441\u0441\u043a\u0438\u0439 | \u4e2d\u6587",
@@ -49,7 +49,7 @@
       "To report a bug or request a feature, create a GitHub Issue. Please ensure someone else hasn't created an issue for the same topic. \ud83e\udd1d Sister projects \ud83d\udd04 Agent Protocol",
       "To maintain a uniform standard and ensure seamless compatibility with many current and future applications, AutoGPT employs the agent protocol standard by the AI Engineer Foundation. This standardizes the communication pathways from your agent to the frontend and benchmark."
     ],
-    "fork_count": 46163,
+    "fork_count": 46162,
     "html_url": "https://github.com/Significant-Gravitas/AutoGPT",
     "id": "Significant-Gravitas/AutoGPT",
     "languages": [
@@ -66,13 +66,13 @@
       "Elixir"
     ],
     "mentionable_users_count": 100,
-    "open_issues_count": 440,
+    "open_issues_count": 441,
     "primary_language": "Python",
-    "pushed_at": "2026-06-10T11:14:00Z",
+    "pushed_at": "2026-06-10T17:42:13Z",
     "pushed_days_ago": 0,
     "readme_length": 11725,
     "readme_to_codebase_ratio": 1.871e-05,
-    "star_count": 184871,
+    "star_count": 184874,
     "topics": [
       "agentic-ai",
       "agents",
@@ -86,6 +86,6 @@
       "openai",
       "python"
     ],
-    "updated_at": "2026-06-10T10:24:52Z"
+    "updated_at": "2026-06-10T16:52:12Z"
   }
 }

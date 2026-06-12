@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091187.7910888,
+  "created_at": 1781113232.765898,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Cloud",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/jwasham/coding-interview-university/{archive_format}{/ref}",
     "archived": false,
@@ -24,8 +24,8 @@
     "downloads_url": "https://api.github.com/repos/jwasham/coding-interview-university/downloads",
     "events_url": "https://api.github.com/repos/jwasham/coding-interview-university/events",
     "fork": false,
-    "forks": 83400,
-    "forks_count": 83400,
+    "forks": 83407,
+    "forks_count": 83407,
     "forks_url": "https://api.github.com/repos/jwasham/coding-interview-university/forks",
     "full_name": "jwasham/coding-interview-university",
     "git_commits_url": "https://api.github.com/repos/jwasham/coding-interview-university/git/commits{/sha}",
@@ -62,7 +62,7 @@
     "milestones_url": "https://api.github.com/repos/jwasham/coding-interview-university/milestones{/number}",
     "mirror_url": null,
     "name": "coding-interview-university",
-    "network_count": 83400,
+    "network_count": 83407,
     "node_id": "MDEwOlJlcG9zaXRvcnk2MDQ5MzEwMQ==",
     "notifications_url": "https://api.github.com/repos/jwasham/coding-interview-university/notifications{?since,all,participating}",
     "open_issues": 113,
@@ -102,7 +102,7 @@
     "releases_url": "https://api.github.com/repos/jwasham/coding-interview-university/releases{/id}",
     "size": 22700,
     "ssh_url": "git@github.com:jwasham/coding-interview-university.git",
-    "stargazers_count": 351059,
+    "stargazers_count": 351084,
     "stargazers_url": "https://api.github.com/repos/jwasham/coding-interview-university/stargazers",
     "statuses_url": "https://api.github.com/repos/jwasham/coding-interview-university/statuses/{sha}",
     "subscribers_count": 8550,
@@ -127,11 +127,11 @@
       "study-plan"
     ],
     "trees_url": "https://api.github.com/repos/jwasham/coding-interview-university/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:30:43Z",
+    "updated_at": "2026-06-10T17:38:58Z",
     "url": "https://api.github.com/repos/jwasham/coding-interview-university",
     "visibility": "public",
-    "watchers": 351059,
-    "watchers_count": 351059,
+    "watchers": 351084,
+    "watchers_count": 351084,
     "web_commit_signoff_required": false
   }
 }

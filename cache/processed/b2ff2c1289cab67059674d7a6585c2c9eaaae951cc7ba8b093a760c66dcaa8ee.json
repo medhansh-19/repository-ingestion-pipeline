@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091058.1753569,
+  "created_at": 1781113314.9170198,
   "value": {
     "created_at": "2014-07-06T13:42:15Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "A curated list of awesome Go frameworks, libraries and software",
     "discovery_band": "high_star",
-    "discovery_category": "Infrastructure",
+    "discovery_category": "Databases",
     "extracted_paragraphs": [
       "](https://github.com/avelino/awesome-go/actions/workflows/tests.yaml?query=branch%3Amain) ](https://github.com/sindresorhus/awesome) ](https://gophers.slack.com/messages/awesome) ](https://app.netlify.com/sites/awesome-go/deploys) ](https://www.trackawesomelist.com/avelino/awesome-go/) ](https://github.com/avelino/awesome-go/commits/main)",
       "We use the _Golang Bridge_ community Slack for instant communication, follow the form here to join.",
@@ -100,10 +100,10 @@
     "open_issues_count": 192,
     "primary_language": "Go",
     "pushed_at": "2026-06-09T13:21:12Z",
-    "pushed_days_ago": 0,
+    "pushed_days_ago": 1,
     "readme_length": 393316,
     "readme_to_codebase_ratio": 0.03320346,
-    "star_count": 175075,
+    "star_count": 175093,
     "topics": [
       "awesome",
       "awesome-list",
@@ -112,6 +112,6 @@
       "golang-library",
       "hacktoberfest"
     ],
-    "updated_at": "2026-06-10T10:58:49Z"
+    "updated_at": "2026-06-10T17:30:36Z"
   }
 }

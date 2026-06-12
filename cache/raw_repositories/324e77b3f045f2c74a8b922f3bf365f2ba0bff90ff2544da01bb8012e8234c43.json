@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091082.8920472,
+  "created_at": 1781113367.349568,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Infrastructure",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/ripienaar/free-for-dev/{archive_format}{/ref}",
     "archived": false,
@@ -24,8 +24,8 @@
     "downloads_url": "https://api.github.com/repos/ripienaar/free-for-dev/downloads",
     "events_url": "https://api.github.com/repos/ripienaar/free-for-dev/events",
     "fork": false,
-    "forks": 12940,
-    "forks_count": 12940,
+    "forks": 12944,
+    "forks_count": 12944,
     "forks_url": "https://api.github.com/repos/ripienaar/free-for-dev/forks",
     "full_name": "ripienaar/free-for-dev",
     "git_commits_url": "https://api.github.com/repos/ripienaar/free-for-dev/git/commits{/sha}",
@@ -56,11 +56,11 @@
     "milestones_url": "https://api.github.com/repos/ripienaar/free-for-dev/milestones{/number}",
     "mirror_url": null,
     "name": "free-for-dev",
-    "network_count": 12940,
+    "network_count": 12944,
     "node_id": "MDEwOlJlcG9zaXRvcnkzMjQ4NDM4MQ==",
     "notifications_url": "https://api.github.com/repos/ripienaar/free-for-dev/notifications{?since,all,participating}",
-    "open_issues": 13,
-    "open_issues_count": 13,
+    "open_issues": 12,
+    "open_issues_count": 12,
     "owner": {
       "avatar_url": "https://avatars.githubusercontent.com/u/82342?v=4",
       "events_url": "https://api.github.com/users/ripienaar/events{/privacy}",
@@ -96,7 +96,7 @@
     "releases_url": "https://api.github.com/repos/ripienaar/free-for-dev/releases{/id}",
     "size": 10062,
     "ssh_url": "git@github.com:ripienaar/free-for-dev.git",
-    "stargazers_count": 122995,
+    "stargazers_count": 122998,
     "stargazers_url": "https://api.github.com/repos/ripienaar/free-for-dev/stargazers",
     "statuses_url": "https://api.github.com/repos/ripienaar/free-for-dev/statuses/{sha}",
     "subscribers_count": 1749,
@@ -111,11 +111,11 @@
       "free-for-developers"
     ],
     "trees_url": "https://api.github.com/repos/ripienaar/free-for-dev/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:04:21Z",
+    "updated_at": "2026-06-10T16:47:23Z",
     "url": "https://api.github.com/repos/ripienaar/free-for-dev",
     "visibility": "public",
-    "watchers": 122995,
-    "watchers_count": 122995,
+    "watchers": 122998,
+    "watchers_count": 122998,
     "web_commit_signoff_required": false
   }
 }

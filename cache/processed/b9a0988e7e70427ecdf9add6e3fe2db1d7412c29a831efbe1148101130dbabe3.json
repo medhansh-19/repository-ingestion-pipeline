@@ -1,5 +1,5 @@
 {
-  "created_at": 1781090948.841275,
+  "created_at": 1781113448.757647,
   "value": {
     "created_at": "2013-05-24T16:15:54Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "The library for web and native user interfaces.",
     "discovery_band": "high_star",
-    "discovery_category": "Frontend",
+    "discovery_category": "Backend",
     "extracted_paragraphs": [
       "React \u00b7 ](https://github.com/facebook/react/blob/main/LICENSE) ](https://www.npmjs.com/package/react) ](https://github.com/facebook/react/actions/workflows/runtime_build_and_test.yml) ](https://github.com/facebook/react/actions/workflows/compiler_typescript.yml) ](https://legacy.reactjs.org/docs/how-to-contribute.html#your-first-pull-request)",
       "React is a JavaScript library for building user interfaces. **Declarative:** React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug. **Component-Based:** Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep the state out of the DOM. **Learn Once, Write Anywhere:** We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code. React can also render on the server using Node and power mobile apps using React Native.",
@@ -38,13 +38,13 @@
       "Shell"
     ],
     "mentionable_users_count": 100,
-    "open_issues_count": 1282,
+    "open_issues_count": 1275,
     "primary_language": "JavaScript",
-    "pushed_at": "2026-06-10T05:49:57Z",
+    "pushed_at": "2026-06-10T16:43:31Z",
     "pushed_days_ago": 0,
     "readme_length": 5317,
     "readme_to_codebase_ratio": 5.23e-06,
-    "star_count": 245719,
+    "star_count": 245728,
     "topics": [
       "declarative",
       "frontend",
@@ -53,6 +53,6 @@
       "react",
       "ui"
     ],
-    "updated_at": "2026-06-10T10:37:33Z"
+    "updated_at": "2026-06-10T17:26:24Z"
   }
 }

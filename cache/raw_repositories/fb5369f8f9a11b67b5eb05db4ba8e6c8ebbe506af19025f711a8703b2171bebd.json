@@ -1,5 +1,5 @@
 {
-  "created_at": 1781089528.332989,
+  "created_at": 1781113401.016145,
   "value": {
     "_discovery_band": "high_star",
     "_discovery_category": "Systems Programming",
@@ -34,8 +34,8 @@
     "downloads_url": "https://api.github.com/repos/github/gitignore/downloads",
     "events_url": "https://api.github.com/repos/github/gitignore/events",
     "fork": false,
-    "forks": 82431,
-    "forks_count": 82431,
+    "forks": 82427,
+    "forks_count": 82427,
     "forks_url": "https://api.github.com/repos/github/gitignore/forks",
     "full_name": "github/gitignore",
     "git_commits_url": "https://api.github.com/repos/github/gitignore/git/commits{/sha}",
@@ -72,7 +72,7 @@
     "milestones_url": "https://api.github.com/repos/github/gitignore/milestones{/number}",
     "mirror_url": null,
     "name": "gitignore",
-    "network_count": 82431,
+    "network_count": 82427,
     "node_id": "MDEwOlJlcG9zaXRvcnkxMDYyODk3",
     "notifications_url": "https://api.github.com/repos/github/gitignore/notifications{?since,all,participating}",
     "open_issues": 64,
@@ -133,7 +133,7 @@
     "releases_url": "https://api.github.com/repos/github/gitignore/releases{/id}",
     "size": 3137,
     "ssh_url": "git@github.com:github/gitignore.git",
-    "stargazers_count": 174357,
+    "stargazers_count": 174370,
     "stargazers_url": "https://api.github.com/repos/github/gitignore/stargazers",
     "statuses_url": "https://api.github.com/repos/github/gitignore/statuses/{sha}",
     "subscribers_count": 3358,
@@ -148,11 +148,11 @@
       "gitignore"
     ],
     "trees_url": "https://api.github.com/repos/github/gitignore/git/trees{/sha}",
-    "updated_at": "2026-06-10T08:24:24Z",
+    "updated_at": "2026-06-10T17:33:20Z",
     "url": "https://api.github.com/repos/github/gitignore",
     "visibility": "public",
-    "watchers": 174357,
-    "watchers_count": 174357,
+    "watchers": 174370,
+    "watchers_count": 174370,
     "web_commit_signoff_required": false
   }
 }

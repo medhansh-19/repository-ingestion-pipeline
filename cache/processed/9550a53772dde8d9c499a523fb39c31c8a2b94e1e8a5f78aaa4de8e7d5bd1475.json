@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091257.0896902,
+  "created_at": 1781113216.6794891,
   "value": {
     "created_at": "2017-02-26T16:15:28Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
     "discovery_band": "high_star",
-    "discovery_category": "Developer Tools",
+    "discovery_category": "Databases",
     "extracted_paragraphs": [
       "English \u2219 \u65e5\u672c\u8a9e \u2219 \u7b80\u4f53\u4e2d\u6587 \u2219 \u7e41\u9ad4\u4e2d\u6587 | \u0627\u0644\u0639\u064e\u0631\u064e\u0628\u0650\u064a\u064e\u0651\u0629\u200e \u2219 \u09ac\u09be\u0982\u09b2\u09be \u2219 Portugu\u00eas do Brasil \u2219 Deutsch \u2219 \u03b5\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac \u2219 \u05e2\u05d1\u05e8\u05d9\u05ea \u2219 Italiano \u2219 \ud55c\uad6d\uc5b4 \u2219 \u0641\u0627\u0631\u0633\u06cc \u2219 Polski \u2219 \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a \u2219 Espa\u00f1ol \u2219 \u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 \u2219 T\u00fcrk\u00e7e \u2219 ti\u1ebfng Vi\u1ec7t \u2219 Fran\u00e7ais | Add Translation",
       "Help translate this guide!** The System Design Primer",
@@ -90,7 +90,7 @@
       "Overall availability decreases when two components with availability",
       "A Domain Name System (DNS) translates a domain name such as www.example.com to an IP address."
     ],
-    "fork_count": 56654,
+    "fork_count": 56655,
     "html_url": "https://github.com/donnemartin/system-design-primer",
     "id": "donnemartin/system-design-primer",
     "languages": [
@@ -104,7 +104,7 @@
     "pushed_days_ago": 82,
     "readme_length": 109682,
     "readme_to_codebase_ratio": 0.00949821,
-    "star_count": 352467,
+    "star_count": 352508,
     "topics": [
       "design",
       "design-patterns",
@@ -120,6 +120,6 @@
       "web-application",
       "webapp"
     ],
-    "updated_at": "2026-06-10T11:27:31Z"
+    "updated_at": "2026-06-10T17:35:14Z"
   }
 }

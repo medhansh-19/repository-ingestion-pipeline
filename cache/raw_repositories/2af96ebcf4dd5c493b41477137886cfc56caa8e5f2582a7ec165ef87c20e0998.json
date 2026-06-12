@@ -1,8 +1,8 @@
 {
-  "created_at": 1781089475.667229,
+  "created_at": 1781113433.239564,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Backend",
+    "_discovery_category": "Web Frameworks",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/vuejs/vue/{archive_format}{/ref}",
     "archived": false,
@@ -25,8 +25,8 @@
     "downloads_url": "https://api.github.com/repos/vuejs/vue/downloads",
     "events_url": "https://api.github.com/repos/vuejs/vue/events",
     "fork": false,
-    "forks": 33715,
-    "forks_count": 33715,
+    "forks": 33705,
+    "forks_count": 33705,
     "forks_url": "https://api.github.com/repos/vuejs/vue/forks",
     "full_name": "vuejs/vue",
     "git_commits_url": "https://api.github.com/repos/vuejs/vue/git/commits{/sha}",
@@ -63,7 +63,7 @@
     "milestones_url": "https://api.github.com/repos/vuejs/vue/milestones{/number}",
     "mirror_url": null,
     "name": "vue",
-    "network_count": 33715,
+    "network_count": 33705,
     "node_id": "MDEwOlJlcG9zaXRvcnkxMTczMDM0Mg==",
     "notifications_url": "https://api.github.com/repos/vuejs/vue/notifications{?since,all,participating}",
     "open_issues": 629,
@@ -124,7 +124,7 @@
     "releases_url": "https://api.github.com/repos/vuejs/vue/releases{/id}",
     "size": 32152,
     "ssh_url": "git@github.com:vuejs/vue.git",
-    "stargazers_count": 209848,
+    "stargazers_count": 209850,
     "stargazers_url": "https://api.github.com/repos/vuejs/vue/stargazers",
     "statuses_url": "https://api.github.com/repos/vuejs/vue/statuses/{sha}",
     "subscribers_count": 5755,
@@ -141,11 +141,11 @@
       "vue"
     ],
     "trees_url": "https://api.github.com/repos/vuejs/vue/git/trees{/sha}",
-    "updated_at": "2026-06-10T10:51:38Z",
+    "updated_at": "2026-06-10T17:41:54Z",
     "url": "https://api.github.com/repos/vuejs/vue",
     "visibility": "public",
-    "watchers": 209848,
-    "watchers_count": 209848,
+    "watchers": 209850,
+    "watchers_count": 209850,
     "web_commit_signoff_required": false
   }
 }

@@ -2,20 +2,20 @@ import asyncio
 import os
 from datetime import datetime, timezone
 
-from github_client import GitHubClient
-from github_discovery import DiscoveryConfig, GitHubDiscoveryEngine
-from repository_enricher import RepositoryEnricher
-from cache import FileCache
-from ingestion_engine import ingest_batch, print_batch_summary
+from acquisition.github_client import GitHubClient
+from acquisition.github_discovery import DiscoveryConfig, GitHubDiscoveryEngine
+from acquisition.repository_enricher import RepositoryEnricher
+from utils.file_cache import FileCache
+from ingestion_engine import ingest_batch, print_batch_summary, CorpusStore
 
-from candidate_retrieval.adapters import (
+from retrieval.adapters import (
     InMemoryUserPersonaStore,
     InMemoryVectorRepository,
     InMemoryMetadataRepository,
 )
-from candidate_retrieval.cache import InMemoryAsyncCache
-from candidate_retrieval.models import RepositoryRecord, UserPersona
-from candidate_retrieval.retriever import CandidateRetriever
+from retrieval.cache import InMemoryAsyncCache
+from retrieval.models import RepositoryRecord, UserPersona
+from retrieval.retriever import CandidateRetriever
 
 
 async def run_end_to_end_test():
@@ -89,8 +89,9 @@ async def run_end_to_end_test():
     print(f"Running Osiris Ingestion Engine on {len(payloads)} repositories...")
     
     # This runs the multi-dimensional feature extraction, document scoring, and vectors
-    ingest_results = ingest_batch(payloads, verbose=True)
-    print_batch_summary(ingest_results)
+    store = CorpusStore()
+    ingest_results = ingest_batch(payloads, corpus_store=store, verbose=True)
+    print_batch_summary(ingest_results, corpus_timeline=store.get_timeline())
 
     # ---------------------------------------------------------
     # PREPARE FOR LAYER 3
@@ -106,7 +107,7 @@ async def run_end_to_end_test():
         repo_id = ingestion_res.repo_id
         
         # Simulate a 384-dimensional vector (since Ingestion Engine computes this internally and sends directly to Qdrant)
-        vectors[repo_id] = [0.1] * 384 
+        vectors[repo_id] = ingestion_res.embedding 
         metadata_store[repo_id] = {"description": "Ingested repo data"}
 
         # Map ingestion outputs to the Postgres schema expected by Retrieval

@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091289.043732,
+  "created_at": 1781113420.4570482,
   "value": {
     "created_at": "2025-10-09T19:45:18Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "An agentic skills framework & software development methodology that works.",
     "discovery_band": "high_star",
-    "discovery_category": "Web Frameworks",
+    "discovery_category": "Automation",
     "extracted_paragraphs": [
       "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them. Quickstart",
       "Give your agent Superpowers: Claude Code, Codex CLI, Codex App, Factory Droid, Gemini CLI, OpenCode, Cursor, GitHub Copilot CLI. How it works",
@@ -37,7 +37,7 @@
       "MIT License - see LICENSE file for details Community",
       "Superpowers is built by Jesse Vincent and the rest of the folks at Prime Radiant. **Discord**: Join us for community support, questions, and sharing what you're building with Superpowers **Issues**: https://github.com/obra/superpowers/issues **Release announcements**: Sign up to get notified about new versions"
     ],
-    "fork_count": 19837,
+    "fork_count": 19856,
     "html_url": "https://github.com/obra/superpowers",
     "id": "obra/superpowers",
     "languages": [
@@ -49,14 +49,14 @@
       "Batchfile"
     ],
     "mentionable_users_count": 32,
-    "open_issues_count": 275,
+    "open_issues_count": 282,
     "primary_language": "Shell",
-    "pushed_at": "2026-06-10T10:44:20Z",
+    "pushed_at": "2026-06-10T15:51:23Z",
     "pushed_days_ago": 0,
     "readme_length": 8354,
-    "readme_to_codebase_ratio": 0.00254467,
-    "star_count": 223039,
+    "readme_to_codebase_ratio": 0.00253046,
+    "star_count": 223397,
     "topics": [],
-    "updated_at": "2026-06-10T11:34:34Z"
+    "updated_at": "2026-06-10T17:42:57Z"
   }
 }

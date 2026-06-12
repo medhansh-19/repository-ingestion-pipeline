@@ -1,5 +1,5 @@
 {
-  "created_at": 1781089553.559005,
+  "created_at": 1781113569.205154,
   "value": {
     "created_at": "2018-05-07T13:27:00Z",
     "delta_30d": 0,
@@ -36,7 +36,7 @@
       "CDN\uff08\u5185\u5bb9\u5206\u53d1\u7f51\u7edc\uff09\u5e38\u89c1\u77e5\u8bc6\u70b9&\u9762\u8bd5\u9898\u603b\u7ed3 \u6d88\u606f\u961f\u5217 \u6d88\u606f\u961f\u5217\u57fa\u7840\u77e5\u8bc6\u603b\u7ed3 Disruptor \u5e38\u89c1\u77e5\u8bc6\u70b9&\u9762\u8bd5\u9898\u603b\u7ed3 RabbitMQ \u5e38\u89c1\u77e5\u8bc6\u70b9&\u9762\u8bd5\u9898\u603b\u7ed3 RocketMQ \u5e38\u89c1\u77e5\u8bc6\u70b9&\u9762\u8bd5\u9898\u603b\u7ed3 Kafka \u5e38\u89c1\u77e5\u8bc6\u70b9&\u9762\u8bd5\u9898\u603b\u7ed3 \u9ad8\u53ef\u7528",
       "\u707e\u5907** = \u5bb9\u707e + \u5907\u4efd\u3002 **\u5907\u4efd**\uff1a\u5c06\u7cfb\u7edf\u6240\u4ea7\u751f\u7684\u6240\u6709\u91cd\u8981\u6570\u636e\u591a\u5907\u4efd\u51e0\u4efd\u3002 **\u5bb9\u707e**\uff1a\u5728\u5f02\u5730\u5efa\u7acb\u4e24\u4e2a\u5b8c\u5168\u76f8\u540c\u7684\u7cfb\u7edf\u3002\u5f53\u67d0\u4e2a\u5730\u65b9\u7684\u7cfb\u7edf\u7a81\u7136\u6302\u6389\uff0c\u6574\u4e2a\u5e94\u7528\u7cfb\u7edf\u53ef\u4ee5\u5207\u6362\u5230\u53e6\u4e00\u4e2a\uff0c\u8fd9\u6837\u7cfb\u7edf\u5c31\u53ef\u4ee5\u6b63\u5e38\u63d0\u4f9b\u670d\u52a1\u4e86\u3002"
     ],
-    "fork_count": 46135,
+    "fork_count": 46141,
     "html_url": "https://github.com/Snailclimb/JavaGuide",
     "id": "Snailclimb/JavaGuide",
     "languages": [
@@ -50,7 +50,7 @@
     "pushed_days_ago": 0,
     "readme_length": 18711,
     "readme_to_codebase_ratio": 0.00010041,
-    "star_count": 156275,
+    "star_count": 156282,
     "topics": [
       "agent",
       "ai",
@@ -66,6 +66,6 @@
       "springai",
       "system-design"
     ],
-    "updated_at": "2026-06-10T11:02:08Z"
+    "updated_at": "2026-06-10T16:26:26Z"
   }
 }

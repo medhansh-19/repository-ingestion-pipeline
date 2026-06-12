@@ -1,8 +1,8 @@
 {
-  "created_at": 1781090687.690902,
+  "created_at": 1781113489.9260008,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Cloud",
+    "_discovery_category": "Embedded Systems",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/{archive_format}{/ref}",
     "archived": false,
@@ -25,8 +25,8 @@
     "downloads_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/downloads",
     "events_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/events",
     "fork": false,
-    "forks": 13621,
-    "forks_count": 13621,
+    "forks": 13631,
+    "forks_count": 13631,
     "forks_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/forks",
     "full_name": "Comfy-Org/ComfyUI",
     "git_commits_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/git/commits{/sha}",
@@ -63,11 +63,11 @@
     "milestones_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/milestones{/number}",
     "mirror_url": null,
     "name": "ComfyUI",
-    "network_count": 13621,
+    "network_count": 13631,
     "node_id": "R_kgDOIygeJg",
     "notifications_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/notifications{?since,all,participating}",
-    "open_issues": 4099,
-    "open_issues_count": 4099,
+    "open_issues": 4105,
+    "open_issues_count": 4105,
     "organization": {
       "avatar_url": "https://avatars.githubusercontent.com/u/166579949?v=4",
       "events_url": "https://api.github.com/users/Comfy-Org/events{/privacy}",
@@ -124,7 +124,7 @@
     "releases_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/releases{/id}",
     "size": 90504,
     "ssh_url": "git@github.com:Comfy-Org/ComfyUI.git",
-    "stargazers_count": 116444,
+    "stargazers_count": 116482,
     "stargazers_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/stargazers",
     "statuses_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/statuses/{sha}",
     "subscribers_count": 763,
@@ -143,11 +143,11 @@
       "stable-diffusion"
     ],
     "trees_url": "https://api.github.com/repos/Comfy-Org/ComfyUI/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:17:58Z",
+    "updated_at": "2026-06-10T17:24:54Z",
     "url": "https://api.github.com/repos/Comfy-Org/ComfyUI",
     "visibility": "public",
-    "watchers": 116444,
-    "watchers_count": 116444,
+    "watchers": 116482,
+    "watchers_count": 116482,
     "web_commit_signoff_required": false
   }
 }

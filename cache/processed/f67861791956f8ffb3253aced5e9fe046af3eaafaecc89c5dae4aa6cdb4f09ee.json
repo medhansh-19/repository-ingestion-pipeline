@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091101.486479,
+  "created_at": 1781113497.2439811,
   "value": {
     "created_at": "2023-03-10T18:58:00Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "LLM inference in C/C++",
     "discovery_band": "high_star",
-    "discovery_category": "Infrastructure",
+    "discovery_category": "AI",
     "extracted_paragraphs": [
       "LLM inference in C/C++ Recent API changes Changelog for libllama API Changelog for llama-server REST API Hot topics **Hugging Face cache migration: models downloaded with -hf are now stored in the standard Hugging Face cache directory, enabling sharing with other HF tools.** **guide : using the new WebUI of llama.cpp** guide : running gpt-oss with llama.cpp [[FEEDBACK] Better packaging for llama.cpp to support downstream consumers \ud83e\udd17](https://github.com/ggml-org/llama.cpp/discussions/15313) Support for the gpt-oss model with native MXFP4 format has been added | PR | Collaboration with NVIDIA | Comment Multimodal support arrived in llama-server: #12898 | documentation VS Code extension for FIM completions: https://github.com/ggml-org/llama.vscode Vim/Neovim plugin for FIM completions: https://github.com/ggml-org/llama.vim Hugging Face Inference Endpoints now support GGUF out of the box! https://github.com/ggml-org/llama.cpp/discussions/9669 Hugging Face GGUF editor: discussion | tool WebGPU support is now available in the browser, see a blog/demo introducing it here.",
       "Getting started with llama.cpp is straightforward. Here are several ways to install it on your machine: Install llama.cpp using brew, nix or winget Run with Docker - see our Docker documentation Download pre-built binaries from the releases page Build from source by cloning this repository - check out our build guide",
@@ -40,7 +40,7 @@
       "The above example is using an intermediate build b5046 of the library. This can be modified to use a different version by changing the URL and checksum. Completions Command-line completion is available for some environments. Bash Completion",
       "Optionally this can be added to your .bashrc or .bash_profile to load it automatically. For example: Dependencies yhirose/cpp-httplib - Single-header HTTP server, used by llama-server - MIT license stb-image - Single-header image format decoder, used by multimodal subsystem - Public domain nlohmann/json - Single-header JSON library, used by various tools/examples - MIT License miniaudio.h - Single-header audio format decoder, used by multimodal subsystem - Public domain subprocess.h - Single-header process launching solution for C and C++ - Public domain"
     ],
-    "fork_count": 19417,
+    "fork_count": 19428,
     "html_url": "https://github.com/ggml-org/llama.cpp",
     "id": "ggml-org/llama.cpp",
     "languages": [
@@ -70,16 +70,16 @@
       "SCSS"
     ],
     "mentionable_users_count": 100,
-    "open_issues_count": 1786,
+    "open_issues_count": 1800,
     "primary_language": "C++",
-    "pushed_at": "2026-06-10T08:12:19Z",
+    "pushed_at": "2026-06-10T14:49:15Z",
     "pushed_days_ago": 0,
     "readme_length": 30764,
     "readme_to_codebase_ratio": 7.324e-05,
-    "star_count": 115889,
+    "star_count": 115926,
     "topics": [
       "ggml"
     ],
-    "updated_at": "2026-06-10T11:28:26Z"
+    "updated_at": "2026-06-10T17:29:55Z"
   }
 }

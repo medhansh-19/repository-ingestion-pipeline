@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091017.8114429,
+  "created_at": 1781113260.7178938,
   "value": {
     "created_at": "2015-06-01T02:33:17Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
     "discovery_band": "high_star",
-    "discovery_category": "Infrastructure",
+    "discovery_category": "Databases",
     "extracted_paragraphs": [
       "Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from SaaSS providers.",
       "This is a list of Free Software network services and web applications which can be hosted on your own server(s). Non-Free software is listed on the Non-Free page.",
@@ -94,10 +94,10 @@
     "open_issues_count": 0,
     "primary_language": "Unknown",
     "pushed_at": "2026-06-09T12:50:43Z",
-    "pushed_days_ago": 0,
+    "pushed_days_ago": 1,
     "readme_length": 321862,
     "readme_to_codebase_ratio": 0.01855152,
-    "star_count": 298290,
+    "star_count": 298357,
     "topics": [
       "awesome",
       "awesome-list",
@@ -108,6 +108,6 @@
       "self-hosted",
       "selfhosted"
     ],
-    "updated_at": "2026-06-10T11:27:57Z"
+    "updated_at": "2026-06-10T17:33:17Z"
   }
 }

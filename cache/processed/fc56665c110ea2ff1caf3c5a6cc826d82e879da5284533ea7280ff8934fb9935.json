@@ -1,0 +1,50 @@
+{
+  "created_at": 1781113375.367209,
+  "value": {
+    "created_at": "2018-11-14T22:00:57Z",
+    "delta_30d": 0,
+    "delta_3d": 0,
+    "delta_7d": 0,
+    "description": "Collection of publicly available IPTV channels from all over the world",
+    "discovery_band": "high_star",
+    "discovery_category": "Databases",
+    "extracted_paragraphs": [
+      "Collection of publicly available IPTV (Internet Protocol television) channels from all over the world. Table of contents \ud83d\ude80 How to use? \ud83d\udcfa Playlists \ud83d\uddd3 EPG \ud83d\uddc4 Database \ud83d\udc68\u200d\ud83d\udcbb API \ud83d\udcda Resources \ud83d\udcac Discussions \u2753 FAQ \ud83d\udee0 Contribution \u2696 Legal \u00a9 License How to use?",
+      "Simply paste the link to one of the playlists into any video player that supports live streaming and press _Open_.",
+      "The main playlist containing all channels available in the repository can be found at:",
+      "Links to other playlists can be found in the PLAYLISTS.md file. EPG",
+      "Electronic Program Guide for most of the channels can be downloaded using utilities published in the iptv-org/epg repository. Database",
+      "All channel data is taken from the iptv-org/database repository. If you find any errors please open a new issue there. API",
+      "The API documentation can be found in the iptv-org/api repository. Resources",
+      "Links to other useful IPTV-related resources can be found in the iptv-org/awesome-iptv repository. Discussions",
+      "If you have a question or idea, welcome to the Discussions. FAQ",
+      "The answers to the most popular questions can be found in the FAQ.md file. Contribution",
+      "Please make sure to read the Contributing Guide before sending an issue or making a pull request.",
+      "And thank you to everyone who has already contributed! Backers",
+      "No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by opening an issue. However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web. Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository). License"
+    ],
+    "fork_count": 6254,
+    "html_url": "https://github.com/iptv-org/iptv",
+    "id": "iptv-org/iptv",
+    "languages": [
+      "TypeScript",
+      "JavaScript"
+    ],
+    "mentionable_users_count": 100,
+    "open_issues_count": 63,
+    "primary_language": "TypeScript",
+    "pushed_at": "2026-06-10T09:28:42Z",
+    "pushed_days_ago": 0,
+    "readme_length": 3628,
+    "readme_to_codebase_ratio": 2.83e-06,
+    "star_count": 117557,
+    "topics": [
+      "iptv",
+      "m3u",
+      "playlist",
+      "streams",
+      "tv"
+    ],
+    "updated_at": "2026-06-10T17:34:45Z"
+  }
+}

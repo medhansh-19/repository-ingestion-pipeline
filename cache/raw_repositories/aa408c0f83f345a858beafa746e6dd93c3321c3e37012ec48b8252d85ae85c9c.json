@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091074.7680252,
+  "created_at": 1781113356.171017,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Infrastructure",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/open-webui/open-webui/{archive_format}{/ref}",
     "archived": false,
@@ -25,8 +25,8 @@
     "downloads_url": "https://api.github.com/repos/open-webui/open-webui/downloads",
     "events_url": "https://api.github.com/repos/open-webui/open-webui/events",
     "fork": false,
-    "forks": 20223,
-    "forks_count": 20223,
+    "forks": 20235,
+    "forks_count": 20235,
     "forks_url": "https://api.github.com/repos/open-webui/open-webui/forks",
     "full_name": "open-webui/open-webui",
     "git_commits_url": "https://api.github.com/repos/open-webui/open-webui/git/commits{/sha}",
@@ -63,11 +63,11 @@
     "milestones_url": "https://api.github.com/repos/open-webui/open-webui/milestones{/number}",
     "mirror_url": null,
     "name": "open-webui",
-    "network_count": 20223,
+    "network_count": 20235,
     "node_id": "R_kgDOKdDCcw",
     "notifications_url": "https://api.github.com/repos/open-webui/open-webui/notifications{?since,all,participating}",
-    "open_issues": 386,
-    "open_issues_count": 386,
+    "open_issues": 388,
+    "open_issues_count": 388,
     "organization": {
       "avatar_url": "https://avatars.githubusercontent.com/u/158137808?v=4",
       "events_url": "https://api.github.com/users/open-webui/events{/privacy}",
@@ -124,7 +124,7 @@
     "releases_url": "https://api.github.com/repos/open-webui/open-webui/releases{/id}",
     "size": 375913,
     "ssh_url": "git@github.com:open-webui/open-webui.git",
-    "stargazers_count": 140929,
+    "stargazers_count": 140971,
     "stargazers_url": "https://api.github.com/repos/open-webui/open-webui/stargazers",
     "statuses_url": "https://api.github.com/repos/open-webui/open-webui/statuses/{sha}",
     "subscribers_count": 617,
@@ -152,11 +152,11 @@
       "webui"
     ],
     "trees_url": "https://api.github.com/repos/open-webui/open-webui/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:29:36Z",
+    "updated_at": "2026-06-10T17:30:28Z",
     "url": "https://api.github.com/repos/open-webui/open-webui",
     "visibility": "public",
-    "watchers": 140929,
-    "watchers_count": 140929,
+    "watchers": 140971,
+    "watchers_count": 140971,
     "web_commit_signoff_required": false
   }
 }

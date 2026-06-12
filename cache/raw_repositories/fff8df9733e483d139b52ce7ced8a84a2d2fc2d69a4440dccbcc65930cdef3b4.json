@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091006.321087,
+  "created_at": 1781113247.486634,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Infrastructure",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/vinta/awesome-python/{archive_format}{/ref}",
     "archived": false,
@@ -102,7 +102,7 @@
     "releases_url": "https://api.github.com/repos/vinta/awesome-python/releases{/id}",
     "size": 5736,
     "ssh_url": "git@github.com:vinta/awesome-python.git",
-    "stargazers_count": 302201,
+    "stargazers_count": 302239,
     "stargazers_url": "https://api.github.com/repos/vinta/awesome-python/stargazers",
     "statuses_url": "https://api.github.com/repos/vinta/awesome-python/statuses/{sha}",
     "subscribers_count": 6108,
@@ -121,11 +121,11 @@
       "python-tools"
     ],
     "trees_url": "https://api.github.com/repos/vinta/awesome-python/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:28:22Z",
+    "updated_at": "2026-06-10T17:37:39Z",
     "url": "https://api.github.com/repos/vinta/awesome-python",
     "visibility": "public",
-    "watchers": 302201,
-    "watchers_count": 302201,
+    "watchers": 302239,
+    "watchers_count": 302239,
     "web_commit_signoff_required": false
   }
 }

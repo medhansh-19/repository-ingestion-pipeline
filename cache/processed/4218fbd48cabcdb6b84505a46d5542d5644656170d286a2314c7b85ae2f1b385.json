@@ -1,5 +1,5 @@
 {
-  "created_at": 1781090687.693467,
+  "created_at": 1781113489.9279108,
   "value": {
     "created_at": "2023-01-17T03:15:56Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
     "discovery_band": "high_star",
-    "discovery_category": "Cloud",
+    "discovery_category": "Embedded Systems",
     "extracted_paragraphs": [
       "ComfyUI **The most powerful and modular AI engine for content creation.",
       "[![Website][website-shield]][website-url] [![Dynamic JSON Badge][discord-shield]][discord-url] [![Twitter][twitter-shield]][twitter-url] [![Matrix][matrix-shield]][matrix-url]",
@@ -77,7 +77,7 @@
       "If you need to use the legacy frontend for any reason, you can access it using the following command line argument:",
       "This will use a snapshot of the legacy frontend preserved in the ComfyUI Legacy Frontend repository. QA Which GPU should I buy for this?"
     ],
-    "fork_count": 13621,
+    "fork_count": 13631,
     "html_url": "https://github.com/Comfy-Org/ComfyUI",
     "id": "Comfy-Org/ComfyUI",
     "languages": [
@@ -87,13 +87,13 @@
       "Mako"
     ],
     "mentionable_users_count": 100,
-    "open_issues_count": 4099,
+    "open_issues_count": 4105,
     "primary_language": "Python",
     "pushed_at": "2026-06-10T06:15:20Z",
     "pushed_days_ago": 0,
     "readme_length": 30186,
     "readme_to_codebase_ratio": 0.00032572,
-    "star_count": 116444,
+    "star_count": 116482,
     "topics": [
       "ai",
       "comfy",
@@ -102,6 +102,6 @@
       "pytorch",
       "stable-diffusion"
     ],
-    "updated_at": "2026-06-10T11:17:58Z"
+    "updated_at": "2026-06-10T17:24:54Z"
   }
 }

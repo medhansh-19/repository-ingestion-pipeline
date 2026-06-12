@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091126.2669172,
+  "created_at": 1781113546.982891,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Infrastructure",
+    "_discovery_category": "Bioinformatics",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/{archive_format}{/ref}",
     "archived": false,
@@ -24,8 +24,8 @@
     "downloads_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/downloads",
     "events_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/events",
     "fork": false,
-    "forks": 11329,
-    "forks_count": 11329,
+    "forks": 11347,
+    "forks_count": 11347,
     "forks_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/forks",
     "full_name": "punkpeye/awesome-mcp-servers",
     "git_commits_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/git/commits{/sha}",
@@ -62,11 +62,11 @@
     "milestones_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/milestones{/number}",
     "mirror_url": null,
     "name": "awesome-mcp-servers",
-    "network_count": 11329,
+    "network_count": 11347,
     "node_id": "R_kgDONWz9pg",
     "notifications_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/notifications{?since,all,participating}",
-    "open_issues": 1358,
-    "open_issues_count": 1358,
+    "open_issues": 1367,
+    "open_issues_count": 1367,
     "owner": {
       "avatar_url": "https://avatars.githubusercontent.com/u/108313943?v=4",
       "events_url": "https://api.github.com/users/punkpeye/events{/privacy}",
@@ -102,7 +102,7 @@
     "releases_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/releases{/id}",
     "size": 32825,
     "ssh_url": "git@github.com:punkpeye/awesome-mcp-servers.git",
-    "stargazers_count": 88797,
+    "stargazers_count": 88807,
     "stargazers_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/stargazers",
     "statuses_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/statuses/{sha}",
     "subscribers_count": 27,
@@ -117,11 +117,11 @@
       "mcp"
     ],
     "trees_url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:16:09Z",
+    "updated_at": "2026-06-10T17:31:35Z",
     "url": "https://api.github.com/repos/punkpeye/awesome-mcp-servers",
     "visibility": "public",
-    "watchers": 88797,
-    "watchers_count": 88797,
+    "watchers": 88807,
+    "watchers_count": 88807,
     "web_commit_signoff_required": false
   }
 }

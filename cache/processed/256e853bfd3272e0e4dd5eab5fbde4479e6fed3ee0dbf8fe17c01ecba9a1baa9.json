@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091126.271592,
+  "created_at": 1781113546.987969,
   "value": {
     "created_at": "2024-11-30T04:49:10Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "A collection of MCP servers.",
     "discovery_band": "high_star",
-    "discovery_category": "Infrastructure",
+    "discovery_category": "Bioinformatics",
     "extracted_paragraphs": [
       "](README-th.md) ](README.md) ](README-zh_TW.md) ](README-zh.md) ](README-ja.md) ](README-ko.md) ](README-pt_BR.md) ](https://glama.ai/mcp/discord) ](https://www.reddit.com/r/mcp/)",
       "> [!IMPORTANT] > Awesome MCP Servers web directory.",
@@ -41,22 +41,22 @@
       "Control smart home devices, home network equipment, and automation systems. handsomejustin/mijia-control ](https://glama.ai/mcp/servers/handsomejustin/mijia-control) \ud83d\udc0d \u2601\ufe0f - Control Xiaomi/Mijia smart home devices (lights, AC, heaters, robots, cameras) through MCP. Includes web dashboard, REST API, CLI, SocketIO, energy monitoring, and automation rules. apiarya/wemo-mcp-server - ](https://glama.ai/mcp/servers/@apiarya/wemo-mcp-server) \ud83d\udc0d \ud83c\udfe0 \ud83c\udf4e \ud83e\ude9f \ud83d\udc27 - Control WeMo smart home devices via AI assistants using natural language. Built on pywemo for 100% local control \u2014 no cloud dependency. Supports dimmer brightness, device rename, HomeKit codes, and multi-phase discovery. Hybirdss/smartest-tv ](https://glama.ai/mcp/servers/Hybirdss/smartest-tv) \ud83d\udc0d \ud83c\udfe0 \ud83c\udf4e \ud83e\ude9f \ud83d\udc27 - Control any smart TV with natural language. Play Netflix, YouTube, Spotify by name with deep linking, cast URLs, scene presets, multi-room audio, and multi-TV sync. Supports LG, Samsung, Android TV, Roku. 21 MCP tools, no cloud required. kambriso/fritzbox-mcp-server \ud83c\udfce\ufe0f \ud83c\udfe0 - Control AVM FRITZ!Box routers - manage devices, WiFi, network settings, parental controls, and schedule time-delayed actions ober37/ac-infinity-mcp ](https://glama.ai/mcp/servers/ober37/ac-infinity-mcp) \ud83d\udc0d \u2601\ufe0f \ud83c\udfe0 \ud83c\udf4e \ud83e\ude9f \ud83d\udc27 - Monitor and automate AC Infinity grow controllers through natural conversation with Claude. 25 tools covering live sensor data, multi-day history, VPD/temperature/humidity automations, port control, advance scheduling, and grow stage templates. \ud83e\udde0 Knowledge & Memory",
       "Persistent memory storage using knowledge graph structures. Enables AI models to maintain and query structured information across sessions. soolaugust/0CompactMem ](https://glama.ai/mcp/servers/soolaugust/0CompactMem) \ud83d\udc0d \ud83c\udfe0 \ud83c\udf4e \ud83e\ude9f \ud83d\udc27 - Persistent memory MCP server with OS-style demand paging, kswapd-style eviction, and mlock pinning. Multi-agent shared SQLite store with BM25 + FTS5 retrieval, importance scoring, and capacity-aware reclaim. 5 tools: memory_lookup, pin_memory, unpin_memory, memory_stats, list_pinned. uvx --from git+https://github.com/soolaugust/0CompactMem memory-os a2cr/a2cr ](https://glama.ai/mcp/servers/a2cr/a2cr) \ud83d\udc0d \u2601\ufe0f \ud83c\udfe0 \ud83c\udf4e \ud83e\ude9f \ud83d\udc27 - MCP server for AI-agent handoffs. Saves client-encrypted WorkBaton checkpoints and WorkStash notes so Codex, Claude Code, Roo Code, and"
     ],
-    "fork_count": 11329,
+    "fork_count": 11347,
     "html_url": "https://github.com/punkpeye/awesome-mcp-servers",
     "id": "punkpeye/awesome-mcp-servers",
     "languages": [],
     "mentionable_users_count": 100,
-    "open_issues_count": 1358,
+    "open_issues_count": 1367,
     "primary_language": "Unknown",
     "pushed_at": "2026-06-07T21:38:07Z",
     "pushed_days_ago": 2,
     "readme_length": 496500,
     "readme_to_codebase_ratio": 0.01477116,
-    "star_count": 88797,
+    "star_count": 88807,
     "topics": [
       "ai",
       "mcp"
     ],
-    "updated_at": "2026-06-10T11:16:09Z"
+    "updated_at": "2026-06-10T17:31:35Z"
   }
 }

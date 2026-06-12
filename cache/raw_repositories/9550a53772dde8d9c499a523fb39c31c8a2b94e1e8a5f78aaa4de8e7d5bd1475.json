@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091257.088007,
+  "created_at": 1781113216.677136,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Developer Tools",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/donnemartin/system-design-primer/{archive_format}{/ref}",
     "archived": false,
@@ -24,8 +24,8 @@
     "downloads_url": "https://api.github.com/repos/donnemartin/system-design-primer/downloads",
     "events_url": "https://api.github.com/repos/donnemartin/system-design-primer/events",
     "fork": false,
-    "forks": 56654,
-    "forks_count": 56654,
+    "forks": 56655,
+    "forks_count": 56655,
     "forks_url": "https://api.github.com/repos/donnemartin/system-design-primer/forks",
     "full_name": "donnemartin/system-design-primer",
     "git_commits_url": "https://api.github.com/repos/donnemartin/system-design-primer/git/commits{/sha}",
@@ -62,7 +62,7 @@
     "milestones_url": "https://api.github.com/repos/donnemartin/system-design-primer/milestones{/number}",
     "mirror_url": null,
     "name": "system-design-primer",
-    "network_count": 56654,
+    "network_count": 56655,
     "node_id": "MDEwOlJlcG9zaXRvcnk4MzIyMjQ0MQ==",
     "notifications_url": "https://api.github.com/repos/donnemartin/system-design-primer/notifications{?since,all,participating}",
     "open_issues": 550,
@@ -102,10 +102,10 @@
     "releases_url": "https://api.github.com/repos/donnemartin/system-design-primer/releases{/id}",
     "size": 11277,
     "ssh_url": "git@github.com:donnemartin/system-design-primer.git",
-    "stargazers_count": 352467,
+    "stargazers_count": 352508,
     "stargazers_url": "https://api.github.com/repos/donnemartin/system-design-primer/stargazers",
     "statuses_url": "https://api.github.com/repos/donnemartin/system-design-primer/statuses/{sha}",
-    "subscribers_count": 6860,
+    "subscribers_count": 6857,
     "subscribers_url": "https://api.github.com/repos/donnemartin/system-design-primer/subscribers",
     "subscription_url": "https://api.github.com/repos/donnemartin/system-design-primer/subscription",
     "svn_url": "https://github.com/donnemartin/system-design-primer",
@@ -128,11 +128,11 @@
       "webapp"
     ],
     "trees_url": "https://api.github.com/repos/donnemartin/system-design-primer/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:27:31Z",
+    "updated_at": "2026-06-10T17:35:14Z",
     "url": "https://api.github.com/repos/donnemartin/system-design-primer",
     "visibility": "public",
-    "watchers": 352467,
-    "watchers_count": 352467,
+    "watchers": 352508,
+    "watchers_count": 352508,
     "web_commit_signoff_required": false
   }
 }

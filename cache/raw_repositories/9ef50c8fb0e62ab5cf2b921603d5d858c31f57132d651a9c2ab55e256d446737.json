@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091017.8064919,
+  "created_at": 1781113260.715327,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Infrastructure",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/{archive_format}{/ref}",
     "archived": false,
@@ -124,10 +124,10 @@
     "releases_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/releases{/id}",
     "size": 16943,
     "ssh_url": "git@github.com:awesome-selfhosted/awesome-selfhosted.git",
-    "stargazers_count": 298290,
+    "stargazers_count": 298357,
     "stargazers_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/stargazers",
     "statuses_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/statuses/{sha}",
-    "subscribers_count": 3204,
+    "subscribers_count": 3203,
     "subscribers_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/subscribers",
     "subscription_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/subscription",
     "svn_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
@@ -145,11 +145,11 @@
       "selfhosted"
     ],
     "trees_url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:27:57Z",
+    "updated_at": "2026-06-10T17:33:17Z",
     "url": "https://api.github.com/repos/awesome-selfhosted/awesome-selfhosted",
     "visibility": "public",
-    "watchers": 298290,
-    "watchers_count": 298290,
+    "watchers": 298357,
+    "watchers_count": 298357,
     "web_commit_signoff_required": false
   }
 }

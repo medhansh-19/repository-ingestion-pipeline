@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091241.914057,
+  "created_at": 1781113481.970297,
   "value": {
     "created_at": "2019-06-22T09:24:21Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "discovery_band": "high_star",
-    "discovery_category": "Automation",
+    "discovery_category": "Developer Tools",
     "extracted_paragraphs": [
       "n8n - Secure Workflow Automation for Technical Teams",
       "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.",
@@ -23,7 +23,7 @@
       "Short answer:** It means \"nodemation\" and is pronounced as n-eight-n.",
       "Long answer:** \"I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'.\" - **Jan Oberhauser, Founder and CEO, n8n.io"
     ],
-    "fork_count": 58437,
+    "fork_count": 58439,
     "html_url": "https://github.com/n8n-io/n8n",
     "id": "n8n-io/n8n",
     "languages": [
@@ -46,13 +46,13 @@
       "Batchfile"
     ],
     "mentionable_users_count": 100,
-    "open_issues_count": 1471,
+    "open_issues_count": 1464,
     "primary_language": "TypeScript",
-    "pushed_at": "2026-06-10T11:33:42Z",
+    "pushed_at": "2026-06-10T17:42:16Z",
     "pushed_days_ago": 0,
     "readme_length": 3675,
-    "readme_to_codebase_ratio": 7.53e-06,
-    "star_count": 191888,
+    "readme_to_codebase_ratio": 7.49e-06,
+    "star_count": 191938,
     "topics": [
       "ai",
       "apis",
@@ -75,6 +75,6 @@
       "workflow",
       "workflow-automation"
     ],
-    "updated_at": "2026-06-10T11:30:49Z"
+    "updated_at": "2026-06-10T17:34:04Z"
   }
 }

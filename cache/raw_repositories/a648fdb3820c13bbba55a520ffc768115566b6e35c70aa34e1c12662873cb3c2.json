@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091305.9855418,
+  "created_at": 1781113304.233896,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Robotics",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/ossu/computer-science/{archive_format}{/ref}",
     "archived": false,
@@ -25,8 +25,8 @@
     "downloads_url": "https://api.github.com/repos/ossu/computer-science/downloads",
     "events_url": "https://api.github.com/repos/ossu/computer-science/events",
     "fork": false,
-    "forks": 25458,
-    "forks_count": 25458,
+    "forks": 25459,
+    "forks_count": 25459,
     "forks_url": "https://api.github.com/repos/ossu/computer-science/forks",
     "full_name": "ossu/computer-science",
     "git_commits_url": "https://api.github.com/repos/ossu/computer-science/git/commits{/sha}",
@@ -63,7 +63,7 @@
     "milestones_url": "https://api.github.com/repos/ossu/computer-science/milestones{/number}",
     "mirror_url": null,
     "name": "computer-science",
-    "network_count": 25458,
+    "network_count": 25459,
     "node_id": "MDEwOlJlcG9zaXRvcnkxOTQxNTA2NA==",
     "notifications_url": "https://api.github.com/repos/ossu/computer-science/notifications{?since,all,participating}",
     "open_issues": 23,
@@ -124,7 +124,7 @@
     "releases_url": "https://api.github.com/repos/ossu/computer-science/releases{/id}",
     "size": 1784,
     "ssh_url": "git@github.com:ossu/computer-science.git",
-    "stargazers_count": 204760,
+    "stargazers_count": 204778,
     "stargazers_url": "https://api.github.com/repos/ossu/computer-science/stargazers",
     "statuses_url": "https://api.github.com/repos/ossu/computer-science/statuses/{sha}",
     "subscribers_count": 5957,
@@ -141,11 +141,11 @@
       "curriculum"
     ],
     "trees_url": "https://api.github.com/repos/ossu/computer-science/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:29:07Z",
+    "updated_at": "2026-06-10T17:16:05Z",
     "url": "https://api.github.com/repos/ossu/computer-science",
     "visibility": "public",
-    "watchers": 204760,
-    "watchers_count": 204760,
+    "watchers": 204778,
+    "watchers_count": 204778,
     "web_commit_signoff_required": false
   }
 }

@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091028.683569,
+  "created_at": 1781113284.838762,
   "value": {
     "created_at": "2018-06-23T10:43:14Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
     "discovery_band": "high_star",
-    "discovery_category": "Infrastructure",
+    "discovery_category": "Databases",
     "extracted_paragraphs": [
       "\" Knowledge is powerful, be careful how you use it! \"",
       "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more.",
@@ -90,7 +90,7 @@
       "Hacking Articles - LRaj Chandel's Security & Hacking Blog. AWS security tools - make your AWS cloud environment more secure. Rawsec's CyberSecurity Inventory - an inventory of tools and resources about CyberSecurity. The Illustrated TLS Connection - every byte of a TLS connection explained and reproduced. SSL Research - SSL and TLS Deployment Best Practices by SSL Labs. SELinux Game - learn SELinux by doing. Solve Puzzles, show skillz. Certificates and PKI - everything you should know about certificates and PKI but are too afraid to ask. The Art of Subdomain Enumeration - a reference for subdomain enumeration techniques. Quitting Google - the comprehensive guide to quitting Google. :black_small_square: Web Apps",
       "OWASP - worldwide not-for-profit charitable organization focused on improving the security of software. OWASP ASVS 3.0.1 - OWASP Application Security Verification Standard Project. OWASP ASVS 3.0.1 Web App - simple web app that helps developers understand the ASVS requirements. OWASP ASVS 4.0 - is a list of application security requirements or tests. OWASP Testing Guide v4 - includes a \"best practice\" penetration testing framework. OWASP Dev Guide - this is the development version of the OWASP Developer Guide. OWASP WSTG - is a comprehensive open source guide to testing the security of web apps. OWASP API Security Project - focuses specifically on the top ten vulnerabilities in API security. Mozilla Web Security - help operational teams with creating secure web applications. security-bulletins - security bulletins that relate to Netflix Open Source. API-Security-Checklist - security countermeasures when designing, testing, and releasing your API. Enable CORS - enable cross-origin resource sharing. Application Security Wiki - is an initiative to provide all application security related resources at one place. Weird Proxies - reverse proxy related attacks; it is a result of analysis of various proxies. Webshells - great series about malicious payloads. Practical Web Cache Poisoning - show you how to compromise websites by using esoteric web features. Hidden directories and files - as a source of sensitive information about web application. Explosive blog - great blog about cybersec and pentests. Security Cookies - this paper will take a close look at cookie security. APISecurityBestPractices - help you keep secrets (API keys, db credentials, certificates) out of source code. :black_small_square: All-in-one"
     ],
-    "fork_count": 13636,
+    "fork_count": 13638,
     "html_url": "https://github.com/trimstray/the-book-of-secret-knowledge",
     "id": "trimstray/the-book-of-secret-knowledge",
     "languages": [],
@@ -98,10 +98,10 @@
     "open_issues_count": 153,
     "primary_language": "Unknown",
     "pushed_at": "2024-11-19T14:00:38Z",
-    "pushed_days_ago": 567,
+    "pushed_days_ago": 568,
     "readme_length": 211640,
     "readme_to_codebase_ratio": 0.11823781,
-    "star_count": 227558,
+    "star_count": 227592,
     "topics": [
       "awesome",
       "awesome-list",
@@ -123,6 +123,6 @@
       "security-researchers",
       "sysops"
     ],
-    "updated_at": "2026-06-10T11:28:46Z"
+    "updated_at": "2026-06-10T17:38:17Z"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "created_at": 1781089553.557575,
+  "created_at": 1781113569.202657,
   "value": {
     "_discovery_band": "high_star",
     "_discovery_category": "RAG",
@@ -24,8 +24,8 @@
     "downloads_url": "https://api.github.com/repos/Snailclimb/JavaGuide/downloads",
     "events_url": "https://api.github.com/repos/Snailclimb/JavaGuide/events",
     "fork": false,
-    "forks": 46135,
-    "forks_count": 46135,
+    "forks": 46141,
+    "forks_count": 46141,
     "forks_url": "https://api.github.com/repos/Snailclimb/JavaGuide/forks",
     "full_name": "Snailclimb/JavaGuide",
     "git_commits_url": "https://api.github.com/repos/Snailclimb/JavaGuide/git/commits{/sha}",
@@ -62,7 +62,7 @@
     "milestones_url": "https://api.github.com/repos/Snailclimb/JavaGuide/milestones{/number}",
     "mirror_url": null,
     "name": "JavaGuide",
-    "network_count": 46135,
+    "network_count": 46141,
     "node_id": "MDEwOlJlcG9zaXRvcnkxMzI0NjQzOTU=",
     "notifications_url": "https://api.github.com/repos/Snailclimb/JavaGuide/notifications{?since,all,participating}",
     "open_issues": 57,
@@ -102,7 +102,7 @@
     "releases_url": "https://api.github.com/repos/Snailclimb/JavaGuide/releases{/id}",
     "size": 181979,
     "ssh_url": "git@github.com:Snailclimb/JavaGuide.git",
-    "stargazers_count": 156275,
+    "stargazers_count": 156282,
     "stargazers_url": "https://api.github.com/repos/Snailclimb/JavaGuide/stargazers",
     "statuses_url": "https://api.github.com/repos/Snailclimb/JavaGuide/statuses/{sha}",
     "subscribers_count": 4449,
@@ -128,11 +128,11 @@
       "system-design"
     ],
     "trees_url": "https://api.github.com/repos/Snailclimb/JavaGuide/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:02:08Z",
+    "updated_at": "2026-06-10T16:26:26Z",
     "url": "https://api.github.com/repos/Snailclimb/JavaGuide",
     "visibility": "public",
-    "watchers": 156275,
-    "watchers_count": 156275,
+    "watchers": 156282,
+    "watchers_count": 156282,
     "web_commit_signoff_required": false
   }
 }

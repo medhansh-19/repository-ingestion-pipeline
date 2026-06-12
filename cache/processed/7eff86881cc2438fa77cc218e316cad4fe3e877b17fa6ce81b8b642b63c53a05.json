@@ -1,5 +1,5 @@
 {
-  "created_at": 1781091265.240916,
+  "created_at": 1781113340.184938,
   "value": {
     "created_at": "2023-02-08T22:28:03Z",
     "delta_30d": 0,
@@ -7,7 +7,7 @@
     "delta_7d": 0,
     "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
     "discovery_band": "high_star",
-    "discovery_category": "Observability",
+    "discovery_category": "Databases",
     "extracted_paragraphs": [
       "](https://github.com/langflow-ai/langflow/releases) ](https://opensource.org/licenses/MIT) ](https://pypistats.org/packages/langflow) ](https://twitter.com/langflow_ai) ](https://www.youtube.com/@Langflow) ](https://discord.gg/EqksyE2EX9) ](https://deepwiki.com/langflow-ai/langflow)",
       "Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a tool that can be integrated into applications built on any framework or stack. Langflow comes with batteries included and supports all major LLMs, vector databases and a growing library of AI tools. \u2728 Highlight features **Visual builder interface** to quickly get started and iterate. **Source code access** lets you customize any component using Python. **Interactive playground** to immediately test and refine your flows with step-by-step control. **Multi-agent orchestration** with conversation management and retrieval. **Deploy as an API** or export as JSON for Python apps. **Deploy as an MCP server** and turn your flows into tools for MCP clients. **Observability** with LangSmith, LangFuse and other integrations. **Enterprise-ready** security and scalability. \ud83d\udda5\ufe0f Langflow Desktop",
@@ -23,7 +23,7 @@
       "Star Langflow on GitHub to be instantly notified of new releases.",
       "We welcome contributions from developers of all levels. If you'd like to contribute, please check our contributing guidelines and help make Langflow more accessible."
     ],
-    "fork_count": 9228,
+    "fork_count": 9231,
     "html_url": "https://github.com/langflow-ai/langflow",
     "id": "langflow-ai/langflow",
     "languages": [
@@ -40,13 +40,13 @@
       "Mako"
     ],
     "mentionable_users_count": 100,
-    "open_issues_count": 946,
+    "open_issues_count": 944,
     "primary_language": "Python",
-    "pushed_at": "2026-06-10T07:30:45Z",
+    "pushed_at": "2026-06-10T17:41:05Z",
     "pushed_days_ago": 0,
     "readme_length": 4690,
     "readme_to_codebase_ratio": 3.37e-06,
-    "star_count": 149489,
+    "star_count": 149499,
     "topics": [
       "agents",
       "chatgpt",
@@ -55,6 +55,6 @@
       "multiagent",
       "react-flow"
     ],
-    "updated_at": "2026-06-10T11:29:19Z"
+    "updated_at": "2026-06-10T17:41:39Z"
   }
 }

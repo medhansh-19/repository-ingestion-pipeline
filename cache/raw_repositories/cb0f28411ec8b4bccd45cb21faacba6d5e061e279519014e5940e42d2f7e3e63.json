@@ -1,8 +1,8 @@
 {
-  "created_at": 1781091280.993571,
+  "created_at": 1781113181.551235,
   "value": {
     "_discovery_band": "high_star",
-    "_discovery_category": "Security",
+    "_discovery_category": "Databases",
     "allow_forking": true,
     "archive_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/{archive_format}{/ref}",
     "archived": false,
@@ -66,8 +66,8 @@
     "network_count": 44873,
     "node_id": "MDEwOlJlcG9zaXRvcnkyODQ1NzgyMw==",
     "notifications_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/notifications{?since,all,participating}",
-    "open_issues": 174,
-    "open_issues_count": 174,
+    "open_issues": 172,
+    "open_issues_count": 172,
     "organization": {
       "avatar_url": "https://avatars.githubusercontent.com/u/9892522?v=4",
       "events_url": "https://api.github.com/users/freeCodeCamp/events{/privacy}",
@@ -120,14 +120,14 @@
     "private": false,
     "pull_request_creation_policy": "all",
     "pulls_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/pulls{/number}",
-    "pushed_at": "2026-06-10T10:46:35Z",
+    "pushed_at": "2026-06-10T16:33:15Z",
     "releases_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/releases{/id}",
-    "size": 574958,
+    "size": 575160,
     "ssh_url": "git@github.com:freeCodeCamp/freeCodeCamp.git",
-    "stargazers_count": 446557,
+    "stargazers_count": 446590,
     "stargazers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/stargazers",
     "statuses_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/statuses/{sha}",
-    "subscribers_count": 8635,
+    "subscribers_count": 8636,
     "subscribers_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscribers",
     "subscription_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/subscription",
     "svn_url": "https://github.com/freeCodeCamp/freeCodeCamp",
@@ -152,11 +152,11 @@
       "teachers"
     ],
     "trees_url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp/git/trees{/sha}",
-    "updated_at": "2026-06-10T11:28:18Z",
+    "updated_at": "2026-06-10T17:11:37Z",
     "url": "https://api.github.com/repos/freeCodeCamp/freeCodeCamp",
     "visibility": "public",
-    "watchers": 446557,
-    "watchers_count": 446557,
+    "watchers": 446590,
+    "watchers_count": 446590,
     "web_commit_signoff_required": true
   }
 }

@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
-from github_client import GitHubClient
+from .github_client import GitHubClient
 
 
 DISCOVERY_CATEGORIES: dict[str, list[str]] = {
